@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <!-- @head -->
+    <title>הצהרת נגישות · {{SITE_NAME}}</title>
+    <meta name="description" content="הצהרת הנגישות של האתר: מה בוצע, תפריט הנגישות, מגבלות ידועות ולמי פונים." />
+  </head>
+  <body>
+    <!-- @header -->
+    <main id="main">
+      <svg class="icon-sprite" aria-hidden="true" focusable="false"><symbol id="i-a11y" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.8"/><path d="M5 8l7 1.2L19 8M12 9.2V14l-3 6M12 14l3 6"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 12h8M8 15h5"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.5"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M15.5 15.5L20 20"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l9.5 17h-19z"/><path d="M12 10v4.5"/><circle cx="12" cy="17.3" r=".9" fill="currentColor"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></symbol></svg>
+      <div class="container">
+        <header class="page-head lesson-head">
+          <span class="eyebrow">נגישות</span>
+          <h1>הצהרת נגישות</h1>
+          <p class="lead">האתר נבנה כך שיהיה שמיש לכל אחד — עם מוגבלות ובלעדיה — בלי תוכנה מיוחדת. כאן מפורט מה נעשה בפועל, מה עדיין לא מושלם, ולמי פונים.</p>
+        </header>
+
+        <div class="lesson-layout">
+          <nav class="lesson-nav" aria-label="בעמוד הזה">
+            <p class="lesson-nav-title">בעמוד הזה</p>
+            <ol>
+              <li><a href="#level"><span class="lesson-nav-ico"><svg><use href="#i-a11y"/></svg></span>רמת הנגישות והתקן</a></li>
+              <li><a href="#menu"><span class="lesson-nav-ico"><svg><use href="#i-menu"/></svg></span>תפריט הנגישות</a></li>
+              <li><a href="#done"><span class="lesson-nav-ico"><svg><use href="#i-check"/></svg></span>מה בוצע באתר עצמו</a></li>
+              <li><a href="#tested"><span class="lesson-nav-ico"><svg><use href="#i-search"/></svg></span>איך זה נבדק</a></li>
+              <li><a href="#limits"><span class="lesson-nav-ico"><svg><use href="#i-alert"/></svg></span>מגבלות ידועות</a></li>
+              <li><a href="#contact"><span class="lesson-nav-ico"><svg><use href="#i-mail"/></svg></span>נתקלתם בבעיה?</a></li>
+            </ol>
+          </nav>
+
+          <div class="lessons">
+            <section id="level" class="lesson" aria-labelledby="level-h">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-a11y"/></svg></span>
+                <h2 id="level-h">רמת הנגישות והתקן</h2>
+                <span class="lesson-num" aria-hidden="true">01</span>
+              </header>
+              <div class="prose">
+                <p>חובת הנגשת שירותי אינטרנט קבועה בתקנה 35 לתקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013. התקנה מפנה לתקן הישראלי ת"י 5568, המבוסס על הנחיות WCAG 2.0.</p>
+                <p>האתר נבנה במטרה לעמוד ברמת התאמה <strong>AA</strong>. הוא נכתב נגיש מההתחלה — בקוד עצמו — ולא בעזרת תוסף שמונח מעליו.</p>
+              </div>
+            </section>
+
+            <section id="menu" class="lesson" aria-labelledby="menu-h">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-menu"/></svg></span>
+                <h2 id="menu-h">תפריט הנגישות</h2>
+                <span class="lesson-num" aria-hidden="true">02</span>
+              </header>
+              <div class="prose">
+                <p>בכל דף, בפינה התחתונה, יש כפתור עגול עם סמל הנגישות. אפשר לפתוח אותו גם בקיצור <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd> ולסגור ב-<kbd>Esc</kbd>. הבחירות נשמרות במכשיר שלך בלבד ומוחלות בכל דף ובכל ביקור.</p>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <caption>הפקדים שבתפריט</caption>
+                    <thead><tr><th scope="col">פקד</th><th scope="col">מה הוא עושה</th></tr></thead>
+                    <tbody>
+                      <tr><td>גודל טקסט — קטן / בינוני / גדול</td><td>מגדיל את כל הטקסט באתר עד 125%.</td></tr>
+                      <tr><td>ניגודיות גבוהה</td><td>טקסט שחור על רקע לבן וגבולות מלאים. המוניטורים והרצועות נשארים כהים.</td></tr>
+                      <tr><td>ניגודיות הפוכה</td><td>רקע שחור מלא וטקסט לבן.</td></tr>
+                      <tr><td>גווני אפור</td><td>מנטרל את הצבע. שימושי בעיוורון צבעים.</td></tr>
+                      <tr><td>פונט קריא</td><td>גופן מערכת אחיד במקום גופן האתר.</td></tr>
+                      <tr><td>ריווח שורות ואותיות</td><td>לפי קריטריון 1.4.12 של WCAG 2.1. מסייע בדיסלקציה.</td></tr>
+                      <tr><td>הדגשת קישורים</td><td>קו תחתון עבה, כדי שקישור לא יזוהה לפי צבע בלבד.</td></tr>
+                      <tr><td>הדגשת מיקוד מקלדת</td><td>מסגרת עבה סביב האלמנט שבמיקוד.</td></tr>
+                      <tr><td>סמן עכבר גדול</td><td>סמן מוגדל בניגודיות גבוהה.</td></tr>
+                      <tr><td>עצירת אנימציות</td><td>מבטל תנועה באתר: המוניטורים החיים לא מתחילים לרוץ מעצמם (אפשר להפעיל אותם בכפתור), והמרוץ במעבדה מציג ישר את התוצאה.</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>למה התפריט נכתב כאן ולא נלקח מתוסף מסחרי: תוסף כזה הוא קוד שנטען מאתר אחר ורץ בדף — בסתירה <a href="./privacy.html">למדיניות הפרטיות</a>. וחשוב מזה: תפריט אינו מנגיש אתר. הוא תוספת נוחות מעל אתר שכבר נגיש.</p>
+              </div>
+            </section>
+
+            <section id="done" class="lesson" aria-labelledby="done-h">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+                <h2 id="done-h">מה בוצע באתר עצמו</h2>
+                <span class="lesson-num" aria-hidden="true">03</span>
+              </header>
+              <div class="prose">
+                <h3>מבנה ושפה</h3>
+                <ul>
+                  <li>HTML סמנטי — כותרת, ניווט, תוכן ראשי ופוטר — כך שקורא מסך יכול לקפוץ בין אזורים.</li>
+                  <li>כותרת ראשית אחת בכל דף, והיררכיית כותרות רציפה.</li>
+                  <li>שפה וכיוון מוגדרים בכל דף (עברית, מימין לשמאל).</li>
+                  <li>לכל רצועת אות בתיקים יש טקסט חלופי שמתאר מה רואים בה. בדיקה אוטומטית בבניית האתר נכשלת אם חסר תיאור.</li>
+                </ul>
+                <h3>מקלדת ומגע</h3>
+                <ul>
+                  <li>קישור "דילוג לתוכן" בראש כל דף.</li>
+                  <li>הסימון על הרצועה בעמודי התיקים אפשרי גם במקלדת: חיצים מזיזים את הסמן, Enter מסמן.</li>
+                  <li>במשחקים ("אתם הקוצב!", "כמה מהר אתם?") אפשר להשתמש במקש רווח במקום בעכבר.</li>
+                  <li>כל האינטראקציות עובדות במגע, ובטלפון ברוחב צר אין גלילה לצדדים.</li>
+                </ul>
+                <h3>ראייה ותנועה</h3>
+                <ul>
+                  <li>צבעי הטקסט נבחרו בניגודיות גבוהה מול הרקע הכהה.</li>
+                  <li>מידע לא מועבר בצבע בלבד: למשל, צבעי הנתרן והאשלגן מוסברים גם במילים, והתוצאות במעבדה כתובות בטקסט.</li>
+                  <li>האתר מכבד את הגדרת "צמצום תנועה" של מערכת ההפעלה: המוניטורים לא רצים מעצמם, והלב בעמוד הבית לא "קופץ".</li>
+                  <li>אין תוכן שמהבהב מהר, ואין שום דבר שמתנגן מעצמו: הצפצוף במעבדת הלב כבוי עד שמדליקים אותו.</li>
+                  <li>מוניטור חי נעצר בלחיצה עליו, ומפסיק לרוץ כשהלשונית מוסתרת.</li>
+                  <li>הדבר היחיד שנע מעצמו לאורך זמן הוא פס הקישורים "עוד אתרים שלי" בתחתית הדף: הוא זז לאט, נעצר כל עוד העכבר, האצבע או מיקוד המקלדת נמצאים עליו, ואפשר לגלול אותו ביד. ב"צמצום תנועה" של המערכת או ב"עצירת אנימציות" בתפריט הנגישות הוא לא זז כלל (קריטריון 2.2.2).</li>
+                </ul>
+              </div>
+            </section>
+
+            <section id="tested" class="lesson" aria-labelledby="tested-h">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-search"/></svg></span>
+                <h2 id="tested-h">איך זה נבדק</h2>
+                <span class="lesson-num" aria-hidden="true">04</span>
+              </header>
+              <div class="prose">
+                <ul>
+                  <li>בדיקות אוטומטיות בדפדפן אמיתי (Playwright), ברוחב מחשב וברוחב טלפון, של העמודים והכלים — כולל גלישה אופקית ושגיאות.</li>
+                  <li>מעבר ידני במקלדת על הרכיבים האינטראקטיביים.</li>
+                </ul>
+                <p>הבדיקות נעשו על ידי מפעיל האתר. <strong>לא נערכה ביקורת נגישות חיצונית על ידי מורשה נגישות מוסמך</strong>, ואיננו מציגים אישור כזה. אנחנו אומרים זאת במפורש כדי שלא תהיה אי-הבנה לגבי מעמד ההצהרה.</p>
+              </div>
+            </section>
+
+            <section id="limits" class="lesson" aria-labelledby="limits-h">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-alert"/></svg></span>
+                <h2 id="limits-h">מגבלות ידועות</h2>
+                <span class="lesson-num" aria-hidden="true">05</span>
+              </header>
+              <div class="prose">
+                <p>נגישות היא תהליך ולא תעודה. אלה הדברים שאנחנו יודעים שאינם מושלמים:</p>
+                <ul>
+                  <li><strong>רצועות אות הן תוכן חזותי מטבען.</strong> הטקסט החלופי מתאר מה רואים, וההסבר המלא נמצא בטקסט של כל תיק — אבל צורה מדויקת של גל לא תמיד אפשר להעביר במילים.</li>
+                  <li><strong>חלק מכלי המעבדה חזותיים</strong> — "הלב החשמלי" ו"גלי מוח" מלמדים דרך מה שרואים על המסך. ההסבר שלהם כתוב גם בטקסט שבעמוד.</li>
+                  <li><strong>משחק "אתם הקוצב!" דורש הקשה בקצב</strong>, וזה עלול להיות קשה למי שמתקשה בתנועה מהירה. אין בו הגבלה על ניסיונות, והתוכן שלו מוסבר גם בעמוד "איך זה עובד".</li>
+                  <li><strong>חלק מהאתר דורש JavaScript:</strong> התיקים, כלי המעבדה, ציר הזמן ועמוד החיות. את ההסברים בעמוד "איך זה עובד" אפשר לקרוא גם בלי.</li>
+                  <li><strong>קישורים חיצוניים</strong> — למקורות ולקריאה נוספת — מובילים לאתרים שאינם בשליטתנו.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section id="contact" class="lesson" aria-labelledby="contact-h">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-mail"/></svg></span>
+                <h2 id="contact-h">נתקלתם בבעיה?</h2>
+                <span class="lesson-num" aria-hidden="true">06</span>
+              </header>
+              <div class="prose">
+                <p>אם משהו באתר אינו נגיש לכם — נשמח לדעת ולתקן. כדאי לציין באיזה עמוד, מה ניסיתם לעשות, ובאיזה דפדפן או טכנולוגיה מסייעת השתמשתם.</p>
+                <ul>
+                  <li><strong>רכז הנגישות:</strong> נדב אלשיך</li>
+                  <li><strong>דואר אלקטרוני:</strong> <a href="mailto:nadaval56@gmail.com">nadaval56@gmail.com</a></li>
+                </ul>
+              </div>
+            </section>
+
+            <p class="legal-updated muted">עודכן לאחרונה: 11 בנובמבר 2026</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- @footer -->
+  </body>
+</html>

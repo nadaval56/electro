@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <!-- @head -->
+    <title>גלי מוח · המעבדה · {{SITE_NAME}}</title>
+    <meta name="description" content="בוחרים מה המוח עושה — מרוכז, רגוע, נרדם, ישן עמוק או חולם — ורואים את גלי המוח משנים צורה וקצב." />
+  </head>
+  <body>
+    <!-- @header -->
+    <main id="main">
+      <div class="container">
+        <!-- @labnav -->
+        <header class="page-head">
+          <h1>גלי מוח</h1>
+          <p class="lead">החשמל של מיליארדי תאי עצב מצטבר לגלים שאפשר למדוד דרך הגולגולת (EEG). לכל מצב יש "מנגינה" משלו. בחרו מצב, וחכו כמה שניות לשינוי.</p>
+        </header>
+
+        <div id="brainwaves-lab"><noscript><p>הכלי הזה דורש JavaScript.</p></noscript></div>
+
+        <section class="section prose" aria-labelledby="challenges">
+          <h2 id="challenges">מה כדאי לבדוק</h2>
+          <ol class="challenges">
+            <li>עברו מ"רגועים" ל"פותרים תרגיל". מה קורה לגובה הגלים?</li>
+            <li>השוו בין שינה עמוקה לחלום. איזה מהם דומה יותר למוח ער?</li>
+            <li>ספרו כמה גלים יש בשנייה אחת (קו אחד עבה ברשת = 0.2 שנייה) במצב רגוע. יצא לכם בערך 10?</li>
+            <li>שימו לב לסרגל בפינה: גלי מוח קטנים בערך פי אלף מאק"ג. למה כל כך קשה למדוד אותם?</li>
+          </ol>
+          <aside class="kids-box"><strong>בשפה פשוטה</strong><p>כשכל תאי המוח עובדים יחד באותו קצב — כמו קהל שקורא "או-לה" ביחד — הגל גדול ואיטי. כשכל אחד עסוק בעניינים שלו, יש רק רחש קטן ומהיר.</p></aside>
+          <p class="muted">הגלים כאן מחוברים מתנדים בתדרים של כל רצועה, בעוצמות שמתאימות בערך למה שמודדים בחלק האחורי של הראש. EEG אמיתי מבולגן יותר, ונמדד בעשרות ערוצים בו זמנית.</p>
+        </section>
+        <!-- @labpager -->
+      </div>
+    </main>
+    <!-- @footer -->
+    <script type="module" src="./src/pages/lab-brainwaves.js"></script>
+  </body>
+</html>

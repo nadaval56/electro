@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <!-- @head -->
+    <title>איך זה עובד · {{SITE_NAME}}</title>
+    <meta name="description" content="מאיפה בא החשמל בגוף: יונים, התא כסוללה, פוטנציאל פעולה, מיאלין, סינפסות, שרירים, הלב והאק&quot;ג, וגלי המוח — בשפה פשוטה." />
+  </head>
+  <body>
+    <!-- @header -->
+    <main id="main">
+      <!-- מקורות: content/sources.md -->
+      <svg class="icon-sprite" aria-hidden="true" focusable="false">
+        <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-2 8 9-12h-6z"/></symbol>
+        <symbol id="i-battery" viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 10v4"/><path d="M7 12h4M9 10v4" /></symbol>
+        <symbol id="i-spike" viewBox="0 0 24 24"><path d="M2 16h5l2-11 3 15 2-4h8"/></symbol>
+        <symbol id="i-run" viewBox="0 0 24 24"><path d="M3 12h18"/><path d="M6 9v6M11 9v6M16 9v6" opacity=".6"/><path d="M18 8l3 4-3 4"/></symbol>
+        <symbol id="i-synapse" viewBox="0 0 24 24"><path d="M3 7c4 0 6 2 6 5s-2 5-6 5"/><path d="M21 7c-4 0-6 2-6 5s2 5 6 5"/><circle cx="12" cy="10" r=".8"/><circle cx="12" cy="14" r=".8"/></symbol>
+        <symbol id="i-muscle" viewBox="0 0 24 24"><path d="M4 15c2-6 6-9 10-8 3 1 5 4 6 8"/><path d="M4 15c3 3 13 3 16 0"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></symbol>
+        <symbol id="i-ecg" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M4 13h4l1-3 2 6 2-9 2 6h5"/></symbol>
+        <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a3 3 0 0 0-3-1z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.3 8-8 9-4.7-1-8-4.5-8-9V6z"/><path d="M13 7l-3 5h4l-3 5"/></symbol>
+        <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></symbol>
+        <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5.5 9.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"/><path d="M7.5 15h9" opacity=".6"/></symbol>
+      </svg>
+
+      <div class="container">
+        <header class="page-head lesson-head">
+          <span class="eyebrow">איך זה עובד</span>
+          <h1>החשמל שבתוכנו</h1>
+          <p class="lead">מגרגר מלח אחד ועד פעימת לב ומחשבה: עשרה צעדים קצרים להבין את האלקטרופיזיולוגיה. בכל פרק יש גם הסבר "בשפה פשוטה" לצעירים.</p>
+        </header>
+
+        <div class="lesson-layout">
+          <nav class="lesson-nav" aria-label="בעמוד הזה">
+            <p class="lesson-nav-title">בעמוד הזה</p>
+            <ol>
+              <li><a href="#body"><span class="lesson-nav-ico"><svg><use href="#i-bolt"/></svg></span>חשמל בגוף? באמת?</a></li>
+              <li><a href="#battery"><span class="lesson-nav-ico"><svg><use href="#i-battery"/></svg></span>כל תא הוא סוללה</a></li>
+              <li><a href="#action"><span class="lesson-nav-ico"><svg><use href="#i-spike"/></svg></span>פוטנציאל פעולה: הניצוץ</a></li>
+              <li><a href="#speed"><span class="lesson-nav-ico"><svg><use href="#i-run"/></svg></span>איך האות רץ, וכמה מהר</a></li>
+              <li><a href="#synapse"><span class="lesson-nav-ico"><svg><use href="#i-synapse"/></svg></span>הסינפסה: תחנת ההעברה</a></li>
+              <li><a href="#muscle"><span class="lesson-nav-ico"><svg><use href="#i-muscle"/></svg></span>שרירים חשמליים</a></li>
+              <li><a href="#heart"><span class="lesson-nav-ico"><svg><use href="#i-heart"/></svg></span>הלב החשמלי</a></li>
+              <li><a href="#ecg"><span class="lesson-nav-ico"><svg><use href="#i-ecg"/></svg></span>איך קוראים אק"ג</a></li>
+              <li><a href="#brain"><span class="lesson-nav-ico"><svg><use href="#i-brain"/></svg></span>המוח מדבר בגלים</a></li>
+              <li><a href="#safety"><span class="lesson-nav-ico"><svg><use href="#i-shield"/></svg></span>חשמל מבחוץ: מסוכן, ומציל חיים</a></li>
+              <li><a href="#glossary"><span class="lesson-nav-ico"><svg><use href="#i-book"/></svg></span>מילון קטן</a></li>
+            </ol>
+          </nav>
+
+          <article class="lessons">
+            <section id="body" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-bolt"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">01</span>
+                <h2>חשמל בגוף? באמת?</h2>
+              </header>
+              <div class="lesson-split">
+                <div class="prose">
+
+<p>כשאומרים "חשמל" חושבים על חוטים ושקעים. בחוט, החשמל הוא <strong>אלקטרונים</strong> שזורמים בתוך מתכת. בגוף אין חוטי מתכת — אבל יש <strong>יונים</strong>: אטומים קטנים עם מטען חשמלי, שמומסים במים שבתוכנו ומסביבנו. הכי חשובים הם נתרן (Na<sup>+</sup>), אשלגן (K<sup>+</sup>), סידן (Ca<sup>2+</sup>) וכלור (Cl<sup>−</sup>). כן — אותו נתרן וכלור שיש במלח שולחן.</p>
+<p>כל תא בגוף עטוף בקרום דק של שומן, הממברנה. יונים לא יכולים לעבור דרכו סתם כך, אלא רק דרך <strong>תעלות</strong> — שערים זעירים, שכל אחד מהם מתאים בדרך כלל לסוג אחד של יון. כשהשערים נפתחים ונסגרים, יונים זזים — וזה החשמל של הגוף.</p>
+<p><strong>אלקטרופיזיולוגיה</strong> היא המדע שמודד את החשמל הזה: בלב (אק"ג), במוח (EEG), בשרירים (EMG), ואפילו בתא בודד אחד.</p>
+                </div>
+                <figure class="lesson-fig">
+<svg class="lesson-illus" direction="ltr" viewBox="0 0 320 190" role="img" aria-label="למעלה: חוט חשמל שבו זורמים אלקטרונים. למטה: ממברנה של תא, שדרך שערים קטנים בה עוברים יונים של נתרן ואשלגן.">
+  <text x="160" y="18" class="il-small" text-anchor="middle">בחוט חשמל: אלקטרונים זורמים במתכת</text>
+  <rect x="20" y="30" width="280" height="22" rx="11" class="il-wire"/>
+  <circle cx="40" cy="41" r="4" class="il-e"/><circle cx="66" cy="41" r="4" class="il-e"/><circle cx="92" cy="41" r="4" class="il-e"/><circle cx="118" cy="41" r="4" class="il-e"/><circle cx="144" cy="41" r="4" class="il-e"/><circle cx="170" cy="41" r="4" class="il-e"/><circle cx="196" cy="41" r="4" class="il-e"/><circle cx="222" cy="41" r="4" class="il-e"/><circle cx="248" cy="41" r="4" class="il-e"/><circle cx="274" cy="41" r="4" class="il-e"/>
+  <path d="M250 64 H70" class="il-arrow" marker-end="url(#ah1)"/>
+  <text x="160" y="104" class="il-small" text-anchor="middle">בגוף: יונים עוברים דרך שערים בממברנה</text>
+  <rect x="20" y="140" width="280" height="12" rx="3" class="il-mem"/>
+  <rect x="96" y="134" width="16" height="24" rx="4" class="il-gate-na"/><rect x="206" y="134" width="16" height="24" rx="4" class="il-gate-k"/>
+  <circle cx="40" cy="120" r="5" class="il-na"/><circle cx="70" cy="124" r="5" class="il-na"/><circle cx="130" cy="118" r="5" class="il-na"/><circle cx="160" cy="126" r="5" class="il-na"/><circle cx="250" cy="120" r="5" class="il-na"/><circle cx="282" cy="124" r="5" class="il-na"/>
+  <circle cx="104" cy="146" r="5" class="il-na"/>
+  <circle cx="50" cy="172" r="5" class="il-k"/><circle cx="86" cy="176" r="5" class="il-k"/><circle cx="150" cy="170" r="5" class="il-k"/><circle cx="180" cy="178" r="5" class="il-k"/><circle cx="240" cy="172" r="5" class="il-k"/><circle cx="276" cy="176" r="5" class="il-k"/>
+  <circle cx="214" cy="146" r="5" class="il-k"/>
+  <text x="304" y="124" class="il-tag" text-anchor="end">בחוץ</text><text x="304" y="183" class="il-tag" text-anchor="end">בפנים</text>
+  <circle cx="80" cy="182" r="4" class="il-k"/><text x="88" y="186" class="il-small">אשלגן</text>
+  <circle cx="24" cy="182" r="4" class="il-na"/><text x="32" y="186" class="il-small">נתרן</text>
+  <defs><marker id="ah1" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M10 0 L0 5 L10 10z" class="il-ahead"/></marker></defs>
+</svg>
+                </figure>
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>הגוף שלכם לא מחובר לשקע. החשמל שלו עשוי מגרגרי מלח זעירים שמומסים במים — והם זזים כל הזמן, גם עכשיו, כשאתם קוראים.</p></aside>
+              
+            </section>
+            <section id="battery" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-battery"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">02</span>
+                <h2>כל תא הוא סוללה</h2>
+              </header>
+              <div class="lesson-split">
+                <div class="prose">
+
+<p>בתוך התא יש הרבה אשלגן, ובחוץ הרבה נתרן. את ההבדל הזה שומרות <strong>משאבות</strong> מיוחדות בממברנה: בכל סיבוב הן מוציאות שלושה יוני נתרן ומכניסות שני יוני אשלגן, ובשביל זה הן צורכות אנרגיה. חלק גדול מהאנרגיה של המוח הולך בדיוק על זה.</p>
+<p>במנוחה, רוב השערים הפתוחים הם שערים לאשלגן. האשלגן "בורח" החוצה, מהמקום הצפוף למקום הפחות צפוף, ולוקח איתו מטען חיובי. מה שנשאר בפנים קצת שלילי. התוצאה: מתח של כ-<strong>70 מיליוולט מינוס</strong> בתוך תא עצב (ובתאי שריר הלב, כ-90 מינוס).</p>
+<p>70 מיליוולט זה מעט — פי עשרים פחות מסוללת אצבע. אבל הממברנה דקה כל כך, שהמתח הקטן הזה יוצר עליה כוח חשמלי חזק מאוד ביחס לגודל שלה.</p>
+                </div>
+                <figure class="lesson-fig">
+<svg class="lesson-illus" direction="ltr" viewBox="0 0 320 200" role="img" aria-label="תא עגול: בחוץ סימני פלוס, בפנים סימני מינוס, ומד מתח שמראה מינוס 70 מיליוולט.">
+  <circle cx="130" cy="100" r="78" class="il-cell"/>
+  <circle cx="130" cy="100" r="70" class="il-cell-in"/>
+  <text x="222" y="104" class="il-plus" text-anchor="middle">+</text><text x="210" y="150" class="il-plus" text-anchor="middle">+</text><text x="176" y="184" class="il-plus" text-anchor="middle">+</text><text x="130" y="196" class="il-plus" text-anchor="middle">+</text><text x="84" y="184" class="il-plus" text-anchor="middle">+</text><text x="50" y="150" class="il-plus" text-anchor="middle">+</text><text x="38" y="104" class="il-plus" text-anchor="middle">+</text><text x="50" y="58" class="il-plus" text-anchor="middle">+</text><text x="84" y="24" class="il-plus" text-anchor="middle">+</text><text x="130" y="12" class="il-plus" text-anchor="middle">+</text><text x="176" y="24" class="il-plus" text-anchor="middle">+</text><text x="210" y="58" class="il-plus" text-anchor="middle">+</text><text x="183" y="122" class="il-minus" text-anchor="middle">−</text><text x="164" y="150" class="il-minus" text-anchor="middle">−</text><text x="131" y="161" class="il-minus" text-anchor="middle">−</text><text x="98" y="151" class="il-minus" text-anchor="middle">−</text><text x="77" y="123" class="il-minus" text-anchor="middle">−</text><text x="77" y="88" class="il-minus" text-anchor="middle">−</text><text x="96" y="60" class="il-minus" text-anchor="middle">−</text><text x="129" y="49" class="il-minus" text-anchor="middle">−</text><text x="162" y="59" class="il-minus" text-anchor="middle">−</text><text x="183" y="87" class="il-minus" text-anchor="middle">−</text>
+  <text x="130" y="96" class="il-label" text-anchor="middle">בתוך התא</text>
+  <text x="130" y="116" class="il-small" text-anchor="middle">הרבה אשלגן</text>
+  <rect x="236" y="62" width="70" height="76" rx="10" class="il-meter"/>
+  <text x="271" y="96" class="il-big" text-anchor="middle">−70</text>
+  <text x="271" y="116" class="il-small" text-anchor="middle">מיליוולט</text>
+  <path d="M236 100 H204" class="il-lead-wire"/>
+</svg>
+                </figure>
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>תארו לכם חדר מלא בילדים, עם דלת קטנה שרק ילדים עם כובע סגול יכולים לצאת בה. הם יוצאים, ולוקחים איתם את הכובעים. בחדר נשאר "חוסר" בכובעים — וזה המתח.</p></aside>
+              <p><a class="lab-link" href="./lab-battery.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לנסות בעצמכם: התא כסוללה</a></p>
+            </section>
+            <section id="action" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-spike"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">03</span>
+                <h2>פוטנציאל פעולה: הניצוץ</h2>
+              </header>
+              <div class="lesson-split">
+                <div class="prose">
+
+<p>תאי עצב ושריר יודעים לעשות משהו מיוחד: להפוך את הסוללה לרגע. כשמשהו מעלה את המתח בתא עד ל<strong>סף</strong> (בערך 55 מינוס), נפתחים בבת אחת <strong>שערי נתרן</strong>. נתרן נכנס בשטף, והמתח קופץ תוך פחות מאלפית שנייה עד בערך 30 או 40 פלוס.</p>
+<p>מיד אחר כך שערי הנתרן "ננעלים", ונפתחים <strong>שערי אשלגן</strong> נוספים. האשלגן יוצא, והמתח צונח חזרה — אפילו קצת מתחת למנוחה. כל הסיפור לוקח בערך 2 אלפיות שנייה, וקוראים לו <strong>פוטנציאל פעולה</strong>, או בקיצור קוץ (spike).</p>
+<p>שני חוקים חשובים: הראשון — <strong>הכול או כלום</strong>. אם לא הגעתם לסף, לא קורה כלום; אם הגעתם — הקוץ תמיד באותו גובה. לכן כדי לומר "חזק", תא עצב יורה יותר קוצים בשנייה, לא קוצים גבוהים יותר. השני — <strong>תקופה עמידה</strong>: מיד אחרי קוץ, התא לא יכול לירות שוב לרגע קצר.</p>
+                </div>
+                <figure class="lesson-fig">
+<svg class="lesson-illus" direction="ltr" viewBox="0 0 320 190" role="img" aria-label="גרף של פוטנציאל פעולה: קו מנוחה במינוס 70, עלייה קטנה עד הסף, זינוק חד עד פלוס 40 כשנתרן נכנס, ירידה כשאשלגן יוצא, ושקע קטן מתחת למנוחה.">
+  <path d="M30 146 H300" class="il-dash"/><text x="302" y="150" class="il-small">-70</text>
+  <path d="M30 128 H300" class="il-dash il-dash-y"/><text x="302" y="132" class="il-small il-y">סף</text>
+  <path d="M30 62 H300" class="il-dash"/><text x="302" y="66" class="il-small">0</text>
+  <path d="M30.0,146.0 L30.9,146.0 L31.8,146.0 L32.7,146.0 L33.6,146.0 L34.5,146.0 L35.4,146.0 L36.3,146.0 L37.2,146.0 L38.1,146.0 L39.0,146.0 L39.9,146.0 L40.8,146.0 L41.7,146.0 L42.6,146.0 L43.5,146.0 L44.4,146.0 L45.3,146.0 L46.2,146.0 L47.1,146.0 L48.0,146.0 L48.9,146.0 L49.8,146.0 L50.7,146.0 L51.6,146.0 L52.5,146.0 L53.4,146.0 L54.3,146.0 L55.2,146.0 L56.1,146.0 L57.0,146.0 L57.9,146.0 L58.8,146.0 L59.7,146.0 L60.6,146.0 L61.5,146.0 L62.4,146.0 L63.3,146.0 L64.2,146.0 L65.1,146.0 L66.0,146.0 L66.9,146.0 L67.8,146.0 L68.7,146.0 L69.6,146.0 L70.5,146.0 L71.4,146.0 L72.3,146.0 L73.2,146.0 L74.1,146.0 L75.0,146.0 L75.9,146.0 L76.8,146.0 L77.7,146.0 L78.6,146.0 L79.5,146.0 L80.4,146.0 L81.3,146.0 L82.2,146.0 L83.1,146.0 L84.0,146.0 L84.9,145.0 L85.8,144.0 L86.7,143.0 L87.6,142.0 L88.5,141.0 L89.4,140.0 L90.3,139.0 L91.2,138.0 L92.1,137.0 L93.0,136.0 L93.9,135.0 L94.8,134.0 L95.7,133.0 L96.6,132.0 L97.5,131.0 L98.4,130.0 L99.3,129.0 L100.2,128.0 L101.1,120.4 L102.0,112.8 L102.9,105.2 L103.8,97.6 L104.7,90.0 L105.6,82.4 L106.5,74.8 L107.4,67.2 L108.3,59.6 L109.2,52.0 L110.1,44.4 L111.0,36.8 L111.9,29.2 L112.8,21.6 L113.7,14.0 L114.6,16.5 L115.5,19.1 L116.4,21.6 L117.3,24.1 L118.2,26.6 L119.1,29.2 L120.0,31.7 L120.9,34.2 L121.8,36.7 L122.7,39.3 L123.6,41.8 L124.5,44.3 L125.4,46.8 L126.3,49.4 L127.2,51.9 L128.1,54.4 L129.0,56.9 L129.9,59.5 L130.8,62.0 L131.7,64.5 L132.6,67.1 L133.5,69.6 L134.4,72.1 L135.3,74.6 L136.2,77.2 L137.1,79.7 L138.0,82.2 L138.9,84.7 L139.8,87.3 L140.7,89.8 L141.6,92.3 L142.5,94.8 L143.4,97.4 L144.3,99.9 L145.2,102.4 L146.1,104.9 L147.0,107.5 L147.9,110.0 L148.8,112.5 L149.7,115.1 L150.6,117.6 L151.5,120.1 L152.4,122.6 L153.3,125.2 L154.2,127.7 L155.1,130.2 L156.0,132.7 L156.9,135.3 L157.8,137.8 L158.7,140.3 L159.6,142.8 L160.5,145.4 L161.4,147.9 L162.3,150.4 L163.2,152.9 L164.1,155.5 L165.0,158.0 L165.9,157.7 L166.8,157.5 L167.7,157.2 L168.6,157.0 L169.5,156.7 L170.4,156.5 L171.3,156.3 L172.2,156.0 L173.1,155.8 L174.0,155.6 L174.9,155.4 L175.8,155.2 L176.7,155.0 L177.6,154.8 L178.5,154.6 L179.4,154.4 L180.3,154.2 L181.2,154.0 L182.1,153.9 L183.0,153.7 L183.9,153.5 L184.8,153.4 L185.7,153.2 L186.6,153.0 L187.5,152.9 L188.4,152.7 L189.3,152.6 L190.2,152.4 L191.1,152.3 L192.0,152.2 L192.9,152.0 L193.8,151.9 L194.7,151.8 L195.6,151.6 L196.5,151.5 L197.4,151.4 L198.3,151.3 L199.2,151.2 L200.1,151.0 L201.0,150.9 L201.9,150.8 L202.8,150.7 L203.7,150.6 L204.6,150.5 L205.5,150.4 L206.4,150.3 L207.3,150.2 L208.2,150.1 L209.1,150.0 L210.0,150.0 L210.9,149.9 L211.8,149.8 L212.7,149.7 L213.6,149.6 L214.5,149.5 L215.4,149.5 L216.3,149.4 L217.2,149.3 L218.1,149.2 L219.0,149.2 L219.9,149.1 L220.8,149.0 L221.7,149.0 L222.6,148.9 L223.5,148.8 L224.4,148.8 L225.3,148.7 L226.2,148.6 L227.1,148.6 L228.0,148.5 L228.9,148.5 L229.8,148.4 L230.7,148.4 L231.6,148.3 L232.5,148.3 L233.4,148.2 L234.3,148.2 L235.2,148.1 L236.1,148.1 L237.0,148.0 L237.9,148.0 L238.8,147.9 L239.7,147.9 L240.6,147.9 L241.5,147.8 L242.4,147.8 L243.3,147.7 L244.2,147.7 L245.1,147.7 L246.0,147.6 L246.9,147.6 L247.8,147.6 L248.7,147.5 L249.6,147.5 L250.5,147.5 L251.4,147.4 L252.3,147.4 L253.2,147.4 L254.1,147.3 L255.0,147.3 L255.9,147.3 L256.8,147.2 L257.7,147.2 L258.6,147.2 L259.5,147.2 L260.4,147.1 L261.3,147.1 L262.2,147.1 L263.1,147.1 L264.0,147.0 L264.9,147.0 L265.8,147.0 L266.7,147.0 L267.6,147.0 L268.5,146.9 L269.4,146.9 L270.3,146.9 L271.2,146.9 L272.1,146.9 L273.0,146.8 L273.9,146.8 L274.8,146.8 L275.7,146.8 L276.6,146.8 L277.5,146.7 L278.4,146.7 L279.3,146.7 L280.2,146.7 L281.1,146.7 L282.0,146.7 L282.9,146.7 L283.8,146.6 L284.7,146.6 L285.6,146.6 L286.5,146.6 L287.4,146.6 L288.3,146.6 L289.2,146.6 L290.1,146.5 L291.0,146.5 L291.9,146.5 L292.8,146.5 L293.7,146.5 L294.6,146.5 L295.5,146.5 L296.4,146.5 L297.3,146.5 L298.2,146.4 L299.1,146.4 L300.0,146.4" class="il-ap"/>
+  <text x="100" y="40" class="il-tag il-y" text-anchor="middle">נתרן נכנס ⬇</text>
+  <text x="185" y="70" class="il-tag il-p" text-anchor="start">אשלגן יוצא ⬆</text>
+  <text x="60" y="160" class="il-small" text-anchor="middle">מנוחה</text>
+  <text x="200" y="182" class="il-small" text-anchor="middle">שקע קטן</text>
+  <text x="165" y="22" class="il-small" text-anchor="middle">כל הקוץ: בערך 2 אלפיות שנייה</text>
+</svg>
+                </figure>
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>זה כמו להדליק גפרור: שפשוף חלש — כלום. שפשוף מספיק חזק — להבה מלאה. אין חצי להבה, ואותו גפרור צריך רגע לפני שאפשר שוב.</p></aside>
+              <p><a class="lab-link" href="./lab-neuron.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לנסות בעצמכם: נוירון במעבדה</a></p><p><a class="lab-link" href="./case-nerve-neuron.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לתיק "הכול או כלום"</a></p>
+            </section>
+            <section id="speed" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-run"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">04</span>
+                <h2>איך האות רץ, וכמה מהר</h2>
+              </header>
+              <div class="lesson-split">
+                <div class="prose">
+
+<p>קוץ במקום אחד בעצב מעלה את המתח גם במקום הסמוך — ושם נדלק קוץ חדש, וכך הלאה, כמו שורת דומינו. בגלל התקופה העמידה, האות לא יכול לחזור אחורה, ולכן הוא רץ רק קדימה.</p>
+<p>בעצב דק ו"ערום" זה איטי: בערך מטר לשנייה. יש שתי דרכים להאיץ. הדיונון בחר להגדיל: האקסון הענק שלו עבה כמעט מילימטר, והאות רץ בו כ-25 מטר לשנייה — מספיק כדי לברוח מטורף. אנחנו בחרנו בדרך חכמה יותר: <strong>מיאלין</strong>, מעטפת שומנית שתאים מיוחדים מלפפים סביב העצב. האות "קופץ" בין הרווחים הקטנים שבמעטפת, ומגיע עד כ-120 מטר לשנייה — יותר מ-400 קמ"ש.</p>
+<p>לא כל העצבים שלנו עטופים. לכן כשנתקלים ברגל של שולחן מרגישים קודם את המכה (בעצב מגע מהיר), ורק אחר כך את הכאב השורף (בעצב דק ואיטי).</p>
+                </div>
+                <figure class="lesson-fig">
+<svg class="lesson-illus" direction="ltr" viewBox="0 0 320 180" role="img" aria-label="אקסון עטוף במקטעים של מיאלין, ובין המקטעים רווחים קטנים. חצים מראים את האות קופץ מרווח לרווח.">
+  <rect x="10" y="94" width="300" height="12" rx="6" class="il-axon"/>
+  <rect x="30" y="84" width="46" height="32" rx="14" class="il-myelin"/><rect x="86" y="84" width="46" height="32" rx="14" class="il-myelin"/><rect x="142" y="84" width="46" height="32" rx="14" class="il-myelin"/><rect x="198" y="84" width="46" height="32" rx="14" class="il-myelin"/><rect x="254" y="84" width="46" height="32" rx="14" class="il-myelin"/>
+  <path d="M27 80 Q55 40 83 80" class="il-jump" marker-end="url(#ah2)"/><path d="M83 80 Q111 40 139 80" class="il-jump" marker-end="url(#ah2)"/><path d="M139 80 Q167 40 195 80" class="il-jump" marker-end="url(#ah2)"/><path d="M195 80 Q223 40 251 80" class="il-jump" marker-end="url(#ah2)"/>
+  <circle cx="27" cy="100" r="5" class="il-node"/><circle cx="83" cy="100" r="5" class="il-node"/><circle cx="139" cy="100" r="5" class="il-node"/><circle cx="195" cy="100" r="5" class="il-node"/><circle cx="251" cy="100" r="5" class="il-node"/><circle cx="307" cy="100" r="5" class="il-node"/>
+  <text x="160" y="146" class="il-label" text-anchor="middle">מיאלין: "מעיל" שומני</text>
+  <text x="160" y="166" class="il-small" text-anchor="middle">האות קופץ בין הרווחים — עד 120 מטר לשנייה</text>
+  <defs><marker id="ah2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" class="il-ahead-y"/></marker></defs>
+</svg>
+                </figure>
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>מיאלין הוא כמו מעיל לעצב. במקום לזחול לאט לכל אורך החוט, האות קופץ מחור לחור במעיל — כמו אבן שמקפצת על פני המים.</p></aside>
+              <p><a class="lab-link" href="./lab-race.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לנסות בעצמכם: מרוץ האותות</a></p>
+            </section>
+            <section id="synapse" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-synapse"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">05</span>
+                <h2>הסינפסה: תחנת ההעברה</h2>
+              </header>
+              <div class="lesson-split">
+                <div class="prose">
+
+<p>תאי עצב לא נוגעים זה בזה. בין קצה של תא אחד לתא הבא יש רווח צר, של עשרות מיליוניות המילימטר. המקום הזה נקרא <strong>סינפסה</strong>.</p>
+<p>כשהקוץ מגיע לקצה התא, הוא גורם לשחרור של חומר כימי (מוליך עצבי) מתוך שלפוחיות קטנות. החומר חוצה את הרווח, נצמד לשערים בתא הבא ופותח אותם — ושם האות הופך שוב לחשמלי. כל מעבר כזה לוקח בערך חצי אלפית שנייה עד אלפית שנייה.</p>
+<p>במוח יש כ-86 מיליארד תאי עצב, ולכל אחד מהם יכולות להיות אלפי סינפסות. בסינפסות האות יכול להתחזק, להיחלש או להיעצר — ושם, כנראה, נשמרים זיכרונות ולמידה. יש גם סינפסות חשמליות, שבהן התאים מחוברים ישירות בתעלות קטנות. ככה מחוברים, למשל, תאי שריר הלב.</p>
+                </div>
+                <figure class="lesson-fig">
+<svg class="lesson-illus" direction="ltr" viewBox="0 0 320 180" role="img" aria-label="שני תאי עצב שלא נוגעים זה בזה. מקצה התא הראשון יוצאות שלפוחיות קטנות של חומר כימי, שחוצות את הרווח ונקלטות בתא השני.">
+  <path d="M10 60 C80 60 120 40 140 90 C120 140 80 120 10 120 Z" class="il-neuron"/>
+  <path d="M310 50 C240 50 190 60 172 90 C190 120 240 130 310 130 Z" class="il-neuron il-neuron-2"/>
+  <circle cx="100" cy="80" r="9" class="il-vesicle"/><circle cx="112" cy="100" r="8" class="il-vesicle"/><circle cx="96" cy="104" r="7" class="il-vesicle"/>
+  <circle cx="148" cy="82" r="3" class="il-nt"/><circle cx="153" cy="95" r="3" class="il-nt"/><circle cx="150" cy="104" r="3" class="il-nt"/><circle cx="158" cy="88" r="3" class="il-nt"/><circle cx="160" cy="100" r="3" class="il-nt"/><circle cx="156" cy="110" r="3" class="il-nt"/>
+  <text x="156" y="160" class="il-label" text-anchor="middle">הרווח: עשרות מיליוניות מילימטר</text>
+  <text x="70" y="40" class="il-small" text-anchor="middle">חשמל ← כימיה</text>
+  <text x="250" y="40" class="il-small" text-anchor="middle">כימיה ← חשמל</text>
+</svg>
+                </figure>
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>סינפסה היא כמו מסירת מכתב בין שני אנשים משני צדי נהר: אי אפשר להעביר את הקול, אז זורקים בקבוק עם פתק — והצד השני קורא וממשיך לצעוק הלאה.</p></aside>
+              <p><a class="lab-link" href="./lab-reaction.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לנסות בעצמכם: כמה מהר אתם?</a></p>
+            </section>
+            <section id="muscle" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-muscle"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">06</span>
+                <h2>שרירים חשמליים</h2>
+              </header>
+              <div>
+                <div class="prose">
+
+<p>כל תנועה מתחילה בקוץ שיוצא מהמוח או מחוט השדרה, ורץ בעצב התנועה עד השריר. בצומת בין העצב לשריר משתחרר מוליך עצבי (אצטילכולין), ובסיב השריר נדלק קוץ משלו. הקוץ הזה משחרר סידן בתוך הסיב, והסידן מאפשר לחלבונים בשריר להיאחז זה בזה ולהחליק — והשריר מתקצר.</p>
+<p>תא עצב אחד שולט בקבוצה של סיבי שריר. כדי להרים נוצה, המוח מפעיל מעט קבוצות; כדי להרים ילקוט כבד — הרבה, ובקצב מהיר יותר. את החשמל של כל הסיבים יחד אפשר למדוד במדבקה על העור: זה ה-<strong>EMG</strong>.</p>
+<p>ידיים תותבות מודרניות משתמשות בזה בדיוק: חיישנים על השרירים שנשארו "מקשיבים" לחשמל, ומפעילים לפיו מנועים קטנים.</p>
+                </div>
+                
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>בכל פעם שאתם מזיזים אצבע, יוצאת מהמוח הודעה חשמלית שאומרת לשריר "עכשיו!". ככל שרוצים יותר כוח — שולחים יותר הודעות.</p></aside>
+              <p><a class="lab-link" href="./case-muscle-squeeze.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לתיק "לחיצת היד"</a></p>
+            </section>
+            <section id="heart" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-heart"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">07</span>
+                <h2>הלב החשמלי</h2>
+              </header>
+              <div class="lesson-split">
+                <div class="prose">
+
+<p>הלב לא מחכה להוראות מהמוח. בדופן העלייה הימנית יש קבוצה קטנה של תאים, <strong>הקוצב הטבעי</strong> (הצומת הסינוסי, SA node), שהסוללה שלהם "דולפת" לאט מעצמה. כשהמתח מגיע לסף — הם יורים, נטענים, ודולפים שוב. אצל מבוגר במנוחה זה קורה בערך 60 עד 100 פעמים בדקה; אצל ילדים — מהר יותר.</p>
+<p>מהקוצב, הגל עובר בעליות, ואז מגיע ל<strong>צומת ההעברה</strong> (AV node), שמעכב אותו בערך עשירית שנייה — כדי שהעליות יספיקו לדחוף דם לחדרים. משם הוא רץ ב"כבישים מהירים" של סיבים מיוחדים לאורך המחיצה ואל דפנות החדרים, והחדרים מתכווצים כמעט ביחד.</p>
+<p>מערכת העצבים רק מכוונת את הקצב: במאמץ ובהתרגשות היא מאיצה אותו, ובמנוחה עצב הוואגוס מאט אותו. ומה קורה אם הקוצב הראשי נח? יש <strong>קוצבי גיבוי</strong>, איטיים יותר. בזכות זה לב שהושתל באדם אחר ממשיך לפעום, למרות שהעצבים שלו נותקו.</p>
+                </div>
+                <figure class="lesson-fig">
+<svg class="lesson-illus" direction="ltr" viewBox="0 0 320 200" role="img" aria-label="סולם של קוצבים בלב: הקוצב הטבעי בראש, 60 עד 100 בדקה; צומת ההעברה באמצע, 40 עד 60; והחדרים בתחתית, 20 עד 40.">
+  <rect x="30" y="20" width="260" height="46" rx="10" class="il-step il-step-1"/>
+  <text x="270" y="40" class="il-label" text-anchor="end">הקוצב הטבעי (בעלייה)</text><text x="270" y="58" class="il-small" text-anchor="end">המתופף הראשי</text><text x="50" y="50" class="il-big" text-anchor="start">60–100</text>
+  <rect x="30" y="76" width="260" height="46" rx="10" class="il-step il-step-2"/>
+  <text x="270" y="96" class="il-label" text-anchor="end">צומת ההעברה</text><text x="270" y="114" class="il-small" text-anchor="end">גיבוי ראשון</text><text x="50" y="106" class="il-big" text-anchor="start">40–60</text>
+  <rect x="30" y="132" width="260" height="46" rx="10" class="il-step il-step-3"/>
+  <text x="270" y="152" class="il-label" text-anchor="end">החדרים</text><text x="270" y="170" class="il-small" text-anchor="end">גיבוי אחרון</text><text x="50" y="162" class="il-big" text-anchor="start">20–40</text>
+  <text x="160" y="196" class="il-small" text-anchor="middle">פעימות בדקה, כשכל אחד מהם עובד לבד</text>
+</svg>
+                </figure>
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>בלב יש מתופף ראשי שמתופף הכי מהר, ולכן כל השאר הולכים אחריו. אם הוא מתעייף — יש מתופפים מחליפים, קצת יותר איטיים.</p></aside>
+              <p><a class="lab-link" href="./lab-heart.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לנסות בעצמכם: הלב החשמלי</a></p><p><a class="lab-link" href="./lab-pacemaker.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>משחק: אתם הקוצב!</a></p>
+            </section>
+            <section id="ecg" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-ecg"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">08</span>
+                <h2>איך קוראים אק"ג</h2>
+              </header>
+              <div class="lesson-split">
+                <div class="prose">
+
+<p>כשהגל החשמלי עובר בלב, הוא יוצר הבדלי מתח קטנים על העור — בערך מיליוולט אחד. אלקטרודות על החזה, הידיים והרגליים מודדות אותם, והמכשיר מצייר <strong>אק"ג</strong> (אלקטרוקרדיוגרם). המדידה רק "מקשיבה": היא לא שולחת חשמל לגוף ולא מרגישים אותה.</p>
+<p>בכל פעימה יש שלושה חלקים: <strong>P</strong> — גבעה קטנה, הגל שעובר בעליות. <strong>QRS</strong> — קוץ גבוה וחד, הגל שעובר בחדרים (הם הרבה יותר שריר, ולכן הקוץ גדול). <strong>T</strong> — גבעה מעוגלת, החדרים נטענים מחדש. השקט בין P ל-QRS הוא העיכוב בצומת ההעברה.</p>
+<p>בנייר אק"ג רגיל כל משבצת קטנה היא 0.04 שנייה, וכל משבצת גדולה (5 קטנות) היא 0.2 שנייה. טריק של רופאים: <strong>300 חלקי מספר המשבצות הגדולות</strong> בין שני קוצים גבוהים = הדופק. 4 משבצות? 75 בדקה.</p>
+                </div>
+                <figure class="lesson-fig">
+<svg class="lesson-illus lesson-illus-wide" direction="ltr" viewBox="0 0 320 190" role="img" aria-label="פעימה אחת באק&quot;ג עם הגלים מסומנים: גבעה קטנה P, קוץ גבוה QRS, וגבעה מעוגלת T.">
+  <defs><pattern id="ecg-grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" class="il-grid"/></pattern><pattern id="ecg-grid5" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" class="il-grid5"/></pattern></defs>
+  <rect x="10" y="10" width="300" height="150" fill="url(#ecg-grid)"/><rect x="10" y="10" width="300" height="150" fill="url(#ecg-grid5)"/>
+  <path d="M10.0,130.0 L11.0,130.0 L12.0,130.0 L13.0,130.0 L14.0,130.0 L15.0,130.0 L16.0,130.0 L17.0,130.0 L18.0,130.0 L19.0,130.0 L20.0,130.0 L21.0,130.0 L22.0,130.0 L23.0,130.0 L24.0,129.9 L25.0,129.9 L26.0,129.9 L27.0,129.9 L28.0,129.8 L29.0,129.8 L30.0,129.7 L31.0,129.7 L32.0,129.6 L33.0,129.5 L34.0,129.4 L35.0,129.2 L36.0,129.1 L37.0,128.9 L38.0,128.6 L39.0,128.4 L40.0,128.1 L41.0,127.7 L42.0,127.3 L43.0,126.9 L44.0,126.4 L45.0,125.9 L46.0,125.4 L47.0,124.8 L48.0,124.1 L49.0,123.5 L50.0,122.8 L51.0,122.1 L52.0,121.4 L53.0,120.6 L54.0,119.9 L55.0,119.2 L56.0,118.6 L57.0,118.0 L58.0,117.4 L59.0,116.9 L60.0,116.5 L61.0,116.2 L62.0,115.9 L63.0,115.8 L64.0,115.7 L65.0,115.8 L66.0,115.9 L67.0,116.2 L68.0,116.5 L69.0,116.9 L70.0,117.4 L71.0,118.0 L72.0,118.6 L73.0,119.2 L74.0,119.9 L75.0,120.6 L76.0,121.4 L77.0,122.1 L78.0,122.8 L79.0,123.5 L80.0,124.1 L81.0,124.8 L82.0,125.4 L83.0,125.9 L84.0,126.4 L85.0,126.9 L86.0,127.3 L87.0,127.7 L88.0,128.1 L89.0,128.4 L90.0,128.6 L91.0,128.9 L92.0,129.1 L93.0,129.2 L94.0,129.4 L95.0,129.5 L96.0,129.6 L97.0,129.7 L98.0,129.7 L99.0,129.8 L100.0,129.8 L101.0,129.9 L102.0,129.9 L103.0,130.0 L104.0,130.0 L105.0,130.1 L106.0,130.2 L107.0,130.4 L108.0,130.8 L109.0,131.2 L110.0,131.8 L111.0,132.6 L112.0,133.5 L113.0,134.4 L114.0,135.0 L115.0,135.3 L116.0,134.8 L117.0,133.2 L118.0,130.3 L119.0,125.5 L120.0,118.9 L121.0,110.4 L122.0,99.9 L123.0,88.0 L124.0,75.0 L125.0,61.7 L126.0,49.0 L127.0,37.9 L128.0,29.2 L129.0,23.8 L130.0,22.2 L131.0,24.7 L132.0,31.1 L133.0,41.0 L134.0,53.6 L135.0,68.0 L136.0,83.2 L137.0,98.3 L138.0,112.3 L139.0,124.6 L140.0,134.7 L141.0,142.3 L142.0,147.3 L143.0,150.0 L144.0,150.6 L145.0,149.5 L146.0,147.4 L147.0,144.6 L148.0,141.7 L149.0,138.9 L150.0,136.4 L151.0,134.4 L152.0,132.9 L153.0,131.7 L154.0,131.0 L155.0,130.4 L156.0,130.1 L157.0,129.9 L158.0,129.7 L159.0,129.6 L160.0,129.5 L161.0,129.5 L162.0,129.4 L163.0,129.3 L164.0,129.2 L165.0,129.1 L166.0,129.0 L167.0,128.8 L168.0,128.7 L169.0,128.5 L170.0,128.3 L171.0,128.1 L172.0,127.9 L173.0,127.7 L174.0,127.4 L175.0,127.1 L176.0,126.8 L177.0,126.5 L178.0,126.1 L179.0,125.8 L180.0,125.4 L181.0,124.9 L182.0,124.5 L183.0,124.0 L184.0,123.4 L185.0,122.9 L186.0,122.3 L187.0,121.7 L188.0,121.1 L189.0,120.4 L190.0,119.7 L191.0,119.0 L192.0,118.3 L193.0,117.5 L194.0,116.8 L195.0,116.0 L196.0,115.2 L197.0,114.4 L198.0,113.5 L199.0,112.7 L200.0,111.9 L201.0,111.1 L202.0,110.3 L203.0,109.5 L204.0,108.7 L205.0,107.9 L206.0,107.2 L207.0,106.5 L208.0,105.8 L209.0,105.2 L210.0,104.6 L211.0,104.0 L212.0,103.5 L213.0,103.0 L214.0,102.6 L215.0,102.3 L216.0,102.0 L217.0,101.8 L218.0,101.6 L219.0,101.5 L220.0,101.5 L221.0,101.5 L222.0,101.6 L223.0,101.8 L224.0,102.0 L225.0,102.3 L226.0,102.6 L227.0,103.0 L228.0,103.5 L229.0,104.0 L230.0,104.6 L231.0,105.2 L232.0,105.8 L233.0,106.5 L234.0,107.2 L235.0,107.9 L236.0,108.7 L237.0,109.5 L238.0,110.3 L239.0,111.1 L240.0,111.9 L241.0,112.7 L242.0,113.5 L243.0,114.4 L244.0,115.2 L245.0,116.0 L246.0,116.8 L247.0,117.5 L248.0,118.3 L249.0,119.0 L250.0,119.7 L251.0,120.4 L252.0,121.1 L253.0,121.7 L254.0,122.3 L255.0,122.9 L256.0,123.4 L257.0,124.0 L258.0,124.5 L259.0,124.9 L260.0,125.4 L261.0,125.8 L262.0,126.1 L263.0,126.5 L264.0,126.8 L265.0,127.1 L266.0,127.4 L267.0,127.7 L268.0,127.9 L269.0,128.1 L270.0,128.3 L271.0,128.5 L272.0,128.7 L273.0,128.8 L274.0,129.0 L275.0,129.1 L276.0,129.2 L277.0,129.3 L278.0,129.4 L279.0,129.4 L280.0,129.5 L281.0,129.6 L282.0,129.6 L283.0,129.7 L284.0,129.7 L285.0,129.8 L286.0,129.8 L287.0,129.8 L288.0,129.8 L289.0,129.9 L290.0,129.9 L291.0,129.9 L292.0,129.9 L293.0,129.9 L294.0,129.9 L295.0,130.0 L296.0,130.0 L297.0,130.0 L298.0,130.0 L299.0,130.0 L300.0,130.0 L301.0,130.0 L302.0,130.0 L303.0,130.0 L304.0,130.0 L305.0,130.0 L306.0,130.0 L307.0,130.0 L308.0,130.0 L309.0,130.0 L310.0,130.0" class="il-ecg"/>
+  <text x="64" y="104" class="il-tag il-p" text-anchor="middle">P</text>
+  <text x="130" y="22" class="il-tag il-h" text-anchor="middle">QRS</text>
+  <text x="220" y="88" class="il-tag il-y" text-anchor="middle">T</text>
+  <text x="64" y="178" class="il-small" text-anchor="middle">העליות</text>
+  <text x="130" y="178" class="il-small" text-anchor="middle">החדרים</text>
+  <text x="220" y="178" class="il-small" text-anchor="middle">התאוששות</text>
+</svg>
+                </figure>
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>P = העליות אומרות "מוכנים", QRS = החדרים צועקים "דוחפים!", T = "נחים רגע". ושוב, ושוב, ושוב.</p></aside>
+              <p><a class="lab-link" href="./case-heart-find-qrs.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לתיק "איפה הלב מתכווץ?"</a></p><p><a class="lab-link" href="./cases.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לכל תיקי הלב</a></p>
+            </section>
+            <section id="brain" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-brain"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">09</span>
+                <h2>המוח מדבר בגלים</h2>
+              </header>
+              <div class="lesson-split">
+                <div class="prose">
+
+<p>תא עצב בודד הוא חלש מדי בשביל שנשמע אותו מבחוץ. אבל כשאלפי מיליונים של תאים בקליפת המוח פועלים יחד באותו קצב, החשמל שלהם מצטבר, ואפשר למדוד אותו באלקטרודות על הקרקפת. זה ה-<strong>EEG</strong> (אלקטרואנצפלוגרם). הגלים זעירים — מיליוניות וולט, בערך פי אלף פחות מאק"ג.</p>
+<p>מסדרים את הגלים לפי הקצב שלהם: <strong>בטא</strong> — מהירים וקטנים, כשחושבים ומתרכזים. <strong>אלפא</strong> — כעשרה בשנייה, כשעוצמים עיניים ונרגעים. <strong>תטא</strong> — איטיים יותר, כשנרדמים. <strong>דלתא</strong> — גדולים ואיטיים מאוד, בשינה עמוקה.</p>
+<p>מדענים משתמשים ב-EEG כדי לחקור שינה, קשב ולמידה, ובמעבדות מסוימות — כדי לאפשר לאנשים שלא יכולים לזוז להפעיל מחשב או זרוע רובוטית רק בעזרת המחשבה.</p>
+                </div>
+                <figure class="lesson-fig">
+<svg class="lesson-illus lesson-illus-wide" direction="ltr" viewBox="0 0 320 190" role="img" aria-label="ארבעה סוגי גלי מוח, אחד מתחת לשני: בטא קטנים ומהירים, אלפא סדירים, תטא איטיים יותר, ודלתא גדולים ואיטיים מאוד.">
+  <text x="60" y="38" class="il-tag" text-anchor="end">בטא</text><path d="M70.0,29.4 L70.6,29.9 L71.2,32.0 L71.8,34.9 L72.4,36.9 L73.0,37.4 L73.6,36.4 L74.2,34.6 L74.8,33.3 L75.4,33.1 L76.0,33.6 L76.6,34.2 L77.2,34.0 L77.8,33.0 L78.4,31.7 L79.0,31.3 L79.6,32.3 L80.2,34.6 L80.8,37.2 L81.4,38.5 L82.0,37.9 L82.6,35.4 L83.2,32.2 L83.8,30.0 L84.4,29.6 L85.0,31.1 L85.6,33.6 L86.2,35.8 L86.8,36.9 L87.4,36.5 L88.0,35.4 L88.6,34.1 L89.2,33.3 L89.8,33.1 L90.4,33.2 L91.0,33.3 L91.6,33.4 L92.2,33.6 L92.8,34.0 L93.4,34.5 L94.0,34.8 L94.6,34.6 L95.2,33.9 L95.8,33.1 L96.4,32.8 L97.0,33.4 L97.6,34.8 L98.2,36.1 L98.8,36.5 L99.4,35.5 L100.0,33.4 L100.6,31.2 L101.2,30.3 L101.8,31.1 L102.4,33.4 L103.0,36.0 L103.6,37.5 L104.2,37.3 L104.8,35.6 L105.4,33.5 L106.0,32.1 L106.6,32.1 L107.2,33.1 L107.8,34.2 L108.4,34.4 L109.0,33.7 L109.6,32.6 L110.2,32.2 L110.8,33.2 L111.4,35.2 L112.0,37.2 L112.6,38.0 L113.2,37.0 L113.8,34.3 L114.4,31.3 L115.0,29.4 L115.6,29.4 L116.2,31.3 L116.8,34.2 L117.4,36.6 L118.0,37.8 L118.6,37.5 L119.2,36.2 L119.8,34.6 L120.4,33.1 L121.0,32.1 L121.6,31.5 L122.2,31.5 L122.8,32.0 L123.4,33.1 L124.0,34.7 L124.6,36.2 L125.2,37.0 L125.8,36.6 L126.4,35.0 L127.0,33.0 L127.6,31.7 L128.2,31.6 L128.8,32.8 L129.4,34.5 L130.0,35.6 L130.6,35.4 L131.2,34.1 L131.8,32.7 L132.4,32.1 L133.0,32.8 L133.6,34.6 L134.2,36.3 L134.8,36.8 L135.4,35.7 L136.0,33.7 L136.6,31.8 L137.2,31.1 L137.8,32.0 L138.4,33.9 L139.0,35.5 L139.6,36.0 L140.2,35.1 L140.8,33.5 L141.4,32.5 L142.0,32.7 L142.6,34.1 L143.2,35.8 L143.8,36.6 L144.4,35.9 L145.0,33.9 L145.6,31.7 L146.2,30.3 L146.8,30.7 L147.4,32.5 L148.0,34.9 L148.6,36.8 L149.2,37.5 L149.8,37.0 L150.4,35.6 L151.0,34.0 L151.6,32.6 L152.2,31.6 L152.8,31.0 L153.4,31.1 L154.0,32.0 L154.6,33.7 L155.2,35.8 L155.8,37.6 L156.4,38.2 L157.0,37.2 L157.6,34.8 L158.2,32.0 L158.8,30.1 L159.4,30.1 L160.0,31.7 L160.6,34.0 L161.2,35.9 L161.8,36.4 L162.4,35.6 L163.0,34.3 L163.6,33.4 L164.2,33.6 L164.8,34.5 L165.4,35.3 L166.0,35.2 L166.6,33.9 L167.2,32.0 L167.8,30.9 L168.4,31.2 L169.0,33.2 L169.6,35.7 L170.2,37.5 L170.8,37.5 L171.4,35.8 L172.0,33.4 L172.6,31.5 L173.2,31.1 L173.8,32.3 L174.4,34.2 L175.0,35.7 L175.6,35.9 L176.2,34.9 L176.8,33.4 L177.4,32.4 L178.0,32.4 L178.6,33.4 L179.2,34.7 L179.8,35.6 L180.4,35.7 L181.0,35.2 L181.6,34.5 L182.2,33.7 L182.8,33.0 L183.4,32.5 L184.0,32.1 L184.6,32.1 L185.2,32.7 L185.8,34.1 L186.4,36.0 L187.0,37.5 L187.6,37.8 L188.2,36.4 L188.8,33.8 L189.4,31.0 L190.0,29.4 L190.6,29.9 L191.2,32.0 L191.8,34.9 L192.4,36.9 L193.0,37.4 L193.6,36.4 L194.2,34.6 L194.8,33.3 L195.4,33.1 L196.0,33.6 L196.6,34.2 L197.2,34.0 L197.8,33.0 L198.4,31.7 L199.0,31.3 L199.6,32.3 L200.2,34.6 L200.8,37.2 L201.4,38.5 L202.0,37.9 L202.6,35.4 L203.2,32.2 L203.8,30.0 L204.4,29.6 L205.0,31.1 L205.6,33.6 L206.2,35.8 L206.8,36.9 L207.4,36.5 L208.0,35.4 L208.6,34.1 L209.2,33.3 L209.8,33.1 L210.4,33.2 L211.0,33.3 L211.6,33.4 L212.2,33.6 L212.8,34.0 L213.4,34.5 L214.0,34.8 L214.6,34.6 L215.2,33.9 L215.8,33.1 L216.4,32.8 L217.0,33.4 L217.6,34.8 L218.2,36.1 L218.8,36.5 L219.4,35.5 L220.0,33.4 L220.6,31.2 L221.2,30.3 L221.8,31.1 L222.4,33.4 L223.0,36.0 L223.6,37.5 L224.2,37.3 L224.8,35.6 L225.4,33.5 L226.0,32.1 L226.6,32.1 L227.2,33.1 L227.8,34.2 L228.4,34.4 L229.0,33.7 L229.6,32.6 L230.2,32.2 L230.8,33.2 L231.4,35.2 L232.0,37.2 L232.6,38.0 L233.2,37.0 L233.8,34.3 L234.4,31.3 L235.0,29.4 L235.6,29.4 L236.2,31.3 L236.8,34.2 L237.4,36.6 L238.0,37.8 L238.6,37.5 L239.2,36.2 L239.8,34.6 L240.4,33.1 L241.0,32.1 L241.6,31.5 L242.2,31.5 L242.8,32.0 L243.4,33.1 L244.0,34.7 L244.6,36.2 L245.2,37.0 L245.8,36.6 L246.4,35.0 L247.0,33.0 L247.6,31.7 L248.2,31.6 L248.8,32.8 L249.4,34.5 L250.0,35.6 L250.6,35.4 L251.2,34.1 L251.8,32.7 L252.4,32.1 L253.0,32.8 L253.6,34.6 L254.2,36.3 L254.8,36.8 L255.4,35.7 L256.0,33.7 L256.6,31.8 L257.2,31.1 L257.8,32.0 L258.4,33.9 L259.0,35.5 L259.6,36.0 L260.2,35.1 L260.8,33.5 L261.4,32.5 L262.0,32.7 L262.6,34.1 L263.2,35.8 L263.8,36.6 L264.4,35.9 L265.0,33.9 L265.6,31.7 L266.2,30.3 L266.8,30.7 L267.4,32.5 L268.0,34.9 L268.6,36.8 L269.2,37.5 L269.8,37.0 L270.4,35.6 L271.0,34.0 L271.6,32.6 L272.2,31.6 L272.8,31.0 L273.4,31.1 L274.0,32.0 L274.6,33.7 L275.2,35.8 L275.8,37.6 L276.4,38.2 L277.0,37.2 L277.6,34.8 L278.2,32.0 L278.8,30.1 L279.4,30.1 L280.0,31.7 L280.6,34.0 L281.2,35.9 L281.8,36.4 L282.4,35.6 L283.0,34.3 L283.6,33.4 L284.2,33.6 L284.8,34.5 L285.4,35.3 L286.0,35.2 L286.6,33.9 L287.2,32.0 L287.8,30.9 L288.4,31.2 L289.0,33.2 L289.6,35.7 L290.2,37.5 L290.8,37.5 L291.4,35.8 L292.0,33.4 L292.6,31.5 L293.2,31.1 L293.8,32.3 L294.4,34.2 L295.0,35.7 L295.6,35.9 L296.2,34.9 L296.8,33.4 L297.4,32.4 L298.0,32.4 L298.6,33.4 L299.2,34.7 L299.8,35.6 L300.4,35.7 L301.0,35.2 L301.6,34.5 L302.2,33.7 L302.8,33.0 L303.4,32.5 L304.0,32.1 L304.6,32.1 L305.2,32.7 L305.8,34.1 L306.4,36.0 L307.0,37.5 L307.6,37.8 L308.2,36.4 L308.8,33.8 L309.4,31.0 L310.0,29.4" class="il-eeg il-wb"/><text x="60" y="82" class="il-tag" text-anchor="end">אלפא</text><path d="M70.0,70.6 L70.6,70.9 L71.2,71.9 L71.8,73.4 L72.4,75.3 L73.0,77.3 L73.6,79.4 L74.2,81.2 L74.8,82.5 L75.4,83.4 L76.0,83.7 L76.6,83.4 L77.2,82.7 L77.8,81.5 L78.4,80.0 L79.0,78.5 L79.6,77.0 L80.2,75.7 L80.8,74.8 L81.4,74.2 L82.0,74.1 L82.6,74.3 L83.2,74.9 L83.8,75.7 L84.4,76.7 L85.0,77.7 L85.6,78.6 L86.2,79.3 L86.8,79.9 L87.4,80.1 L88.0,80.1 L88.6,79.9 L89.2,79.5 L89.8,79.0 L90.4,78.6 L91.0,78.1 L91.6,77.8 L92.2,77.6 L92.8,77.5 L93.4,77.6 L94.0,77.8 L94.6,77.9 L95.2,78.1 L95.8,78.2 L96.4,78.2 L97.0,78.1 L97.6,77.8 L98.2,77.5 L98.8,77.1 L99.4,76.7 L100.0,76.4 L100.6,76.2 L101.2,76.3 L101.8,76.5 L102.4,77.0 L103.0,77.7 L103.6,78.6 L104.2,79.5 L104.8,80.3 L105.4,81.0 L106.0,81.5 L106.6,81.6 L107.2,81.3 L107.8,80.7 L108.4,79.7 L109.0,78.4 L109.6,77.0 L110.2,75.6 L110.8,74.3 L111.4,73.3 L112.0,72.7 L112.6,72.7 L113.2,73.1 L113.8,74.1 L114.4,75.6 L115.0,77.4 L115.6,79.3 L116.2,81.3 L116.8,83.0 L117.4,84.3 L118.0,85.0 L118.6,85.0 L119.2,84.3 L119.8,83.0 L120.4,81.1 L121.0,78.8 L121.6,76.3 L122.2,73.9 L122.8,71.8 L123.4,70.3 L124.0,69.4 L124.6,69.4 L125.2,70.3 L125.8,72.0 L126.4,74.3 L127.0,77.1 L127.6,80.0 L128.2,82.9 L128.8,85.3 L129.4,87.1 L130.0,88.0 L130.6,88.0 L131.2,87.0 L131.8,85.0 L132.4,82.3 L133.0,79.1 L133.6,75.7 L134.2,72.5 L134.8,69.7 L135.4,67.7 L136.0,66.7 L136.6,66.7 L137.2,67.9 L137.8,70.2 L138.4,73.2 L139.0,76.8 L139.6,80.6 L140.2,84.1 L140.8,87.2 L141.4,89.4 L142.0,90.5 L142.6,90.4 L143.2,89.0 L143.8,86.6 L144.4,83.2 L145.0,79.3 L145.6,75.2 L146.2,71.4 L146.8,68.1 L147.4,65.8 L148.0,64.6 L148.6,64.8 L149.2,66.2 L149.8,68.9 L150.4,72.4 L151.0,76.6 L151.6,80.9 L152.2,85.0 L152.8,88.5 L153.4,90.9 L154.0,92.1 L154.6,91.9 L155.2,90.4 L155.8,87.6 L156.4,83.8 L157.0,79.5 L157.6,74.9 L158.2,70.7 L158.8,67.1 L159.4,64.6 L160.0,63.4 L160.6,63.6 L161.2,65.2 L161.8,68.1 L162.4,72.0 L163.0,76.5 L163.6,81.1 L164.2,85.5 L164.8,89.1 L165.4,91.7 L166.0,92.9 L166.6,92.6 L167.2,90.9 L167.8,88.0 L168.4,84.0 L169.0,79.5 L169.6,74.8 L170.2,70.5 L170.8,66.8 L171.4,64.3 L172.0,63.1 L172.6,63.4 L173.2,65.1 L173.8,68.0 L174.4,72.0 L175.0,76.5 L175.6,81.2 L176.2,85.5 L176.8,89.1 L177.4,91.6 L178.0,92.7 L178.6,92.4 L179.2,90.7 L179.8,87.8 L180.4,83.9 L181.0,79.5 L181.6,74.9 L182.2,70.7 L182.8,67.2 L183.4,64.8 L184.0,63.7 L184.6,64.0 L185.2,65.7 L185.8,68.6 L186.4,72.3 L187.0,76.6 L187.6,81.0 L188.2,85.0 L188.8,88.3 L189.4,90.6 L190.0,91.6 L190.6,91.3 L191.2,89.7 L191.8,86.9 L192.4,83.4 L193.0,79.3 L193.6,75.2 L194.2,71.4 L194.8,68.3 L195.4,66.2 L196.0,65.3 L196.6,65.6 L197.2,67.1 L197.8,69.7 L198.4,73.0 L199.0,76.8 L199.6,80.6 L200.2,84.1 L200.8,86.9 L201.4,88.8 L202.0,89.6 L202.6,89.3 L203.2,87.9 L203.8,85.6 L204.4,82.5 L205.0,79.1 L205.6,75.7 L206.2,72.5 L206.8,70.0 L207.4,68.3 L208.0,67.6 L208.6,67.9 L209.2,69.2 L209.8,71.3 L210.4,74.0 L211.0,77.0 L211.6,80.0 L212.2,82.8 L212.8,84.9 L213.4,86.4 L214.0,87.0 L214.6,86.7 L215.2,85.5 L215.8,83.7 L216.4,81.4 L217.0,78.8 L217.6,76.3 L218.2,74.0 L218.8,72.2 L219.4,71.0 L220.0,70.6 L220.6,70.9 L221.2,71.9 L221.8,73.4 L222.4,75.3 L223.0,77.3 L223.6,79.4 L224.2,81.2 L224.8,82.5 L225.4,83.4 L226.0,83.7 L226.6,83.4 L227.2,82.7 L227.8,81.5 L228.4,80.0 L229.0,78.5 L229.6,77.0 L230.2,75.7 L230.8,74.8 L231.4,74.2 L232.0,74.1 L232.6,74.3 L233.2,74.9 L233.8,75.7 L234.4,76.7 L235.0,77.7 L235.6,78.6 L236.2,79.3 L236.8,79.9 L237.4,80.1 L238.0,80.1 L238.6,79.9 L239.2,79.5 L239.8,79.0 L240.4,78.6 L241.0,78.1 L241.6,77.8 L242.2,77.6 L242.8,77.5 L243.4,77.6 L244.0,77.8 L244.6,77.9 L245.2,78.1 L245.8,78.2 L246.4,78.2 L247.0,78.1 L247.6,77.8 L248.2,77.5 L248.8,77.1 L249.4,76.7 L250.0,76.4 L250.6,76.2 L251.2,76.3 L251.8,76.5 L252.4,77.0 L253.0,77.7 L253.6,78.6 L254.2,79.5 L254.8,80.3 L255.4,81.0 L256.0,81.5 L256.6,81.6 L257.2,81.3 L257.8,80.7 L258.4,79.7 L259.0,78.4 L259.6,77.0 L260.2,75.6 L260.8,74.3 L261.4,73.3 L262.0,72.7 L262.6,72.7 L263.2,73.1 L263.8,74.1 L264.4,75.6 L265.0,77.4 L265.6,79.3 L266.2,81.3 L266.8,83.0 L267.4,84.3 L268.0,85.0 L268.6,85.0 L269.2,84.3 L269.8,83.0 L270.4,81.1 L271.0,78.8 L271.6,76.3 L272.2,73.9 L272.8,71.8 L273.4,70.3 L274.0,69.4 L274.6,69.4 L275.2,70.3 L275.8,72.0 L276.4,74.3 L277.0,77.1 L277.6,80.0 L278.2,82.9 L278.8,85.3 L279.4,87.1 L280.0,88.0 L280.6,88.0 L281.2,87.0 L281.8,85.0 L282.4,82.3 L283.0,79.1 L283.6,75.7 L284.2,72.5 L284.8,69.7 L285.4,67.7 L286.0,66.7 L286.6,66.7 L287.2,67.9 L287.8,70.2 L288.4,73.2 L289.0,76.8 L289.6,80.6 L290.2,84.1 L290.8,87.2 L291.4,89.4 L292.0,90.5 L292.6,90.4 L293.2,89.0 L293.8,86.6 L294.4,83.2 L295.0,79.3 L295.6,75.2 L296.2,71.4 L296.8,68.1 L297.4,65.8 L298.0,64.6 L298.6,64.8 L299.2,66.2 L299.8,68.9 L300.4,72.4 L301.0,76.6 L301.6,80.9 L302.2,85.0 L302.8,88.5 L303.4,90.9 L304.0,92.1 L304.6,91.9 L305.2,90.4 L305.8,87.6 L306.4,83.8 L307.0,79.5 L307.6,74.9 L308.2,70.7 L308.8,67.1 L309.4,64.6 L310.0,63.4" class="il-eeg il-wa"/><text x="60" y="126" class="il-tag" text-anchor="end">תטא</text><path d="M70.0,131.4 L70.6,129.9 L71.2,128.2 L71.8,126.2 L72.4,124.1 L73.0,121.8 L73.6,119.5 L74.2,117.3 L74.8,115.2 L75.4,113.4 L76.0,111.8 L76.6,110.5 L77.2,109.6 L77.8,109.1 L78.4,109.0 L79.0,109.4 L79.6,110.2 L80.2,111.4 L80.8,112.9 L81.4,114.7 L82.0,116.8 L82.6,119.0 L83.2,121.3 L83.8,123.6 L84.4,125.8 L85.0,127.9 L85.6,129.8 L86.2,131.4 L86.8,132.7 L87.4,133.6 L88.0,134.1 L88.6,134.2 L89.2,133.9 L89.8,133.2 L90.4,132.1 L91.0,130.8 L91.6,129.1 L92.2,127.3 L92.8,125.4 L93.4,123.4 L94.0,121.4 L94.6,119.5 L95.2,117.7 L95.8,116.2 L96.4,114.8 L97.0,113.8 L97.6,113.1 L98.2,112.7 L98.8,112.6 L99.4,112.9 L100.0,113.4 L100.6,114.2 L101.2,115.2 L101.8,116.4 L102.4,117.7 L103.0,119.1 L103.6,120.5 L104.2,121.9 L104.8,123.2 L105.4,124.3 L106.0,125.3 L106.6,126.1 L107.2,126.6 L107.8,127.0 L108.4,127.2 L109.0,127.1 L109.6,126.9 L110.2,126.5 L110.8,126.0 L111.4,125.4 L112.0,124.7 L112.6,124.0 L113.2,123.4 L113.8,122.7 L114.4,122.2 L115.0,121.8 L115.6,121.5 L116.2,121.3 L116.8,121.2 L117.4,121.3 L118.0,121.4 L118.6,121.6 L119.2,121.9 L119.8,122.2 L120.4,122.5 L121.0,122.8 L121.6,123.0 L122.2,123.1 L122.8,123.1 L123.4,123.0 L124.0,122.8 L124.6,122.4 L125.2,121.9 L125.8,121.3 L126.4,120.7 L127.0,120.0 L127.6,119.2 L128.2,118.5 L128.8,117.8 L129.4,117.2 L130.0,116.8 L130.6,116.5 L131.2,116.4 L131.8,116.5 L132.4,116.8 L133.0,117.4 L133.6,118.2 L134.2,119.2 L134.8,120.3 L135.4,121.6 L136.0,123.1 L136.6,124.5 L137.2,126.0 L137.8,127.4 L138.4,128.7 L139.0,129.8 L139.6,130.7 L140.2,131.3 L140.8,131.7 L141.4,131.7 L142.0,131.4 L142.6,130.8 L143.2,129.8 L143.8,128.5 L144.4,127.0 L145.0,125.2 L145.6,123.3 L146.2,121.3 L146.8,119.2 L147.4,117.2 L148.0,115.3 L148.6,113.6 L149.2,112.2 L149.8,111.0 L150.4,110.2 L151.0,109.7 L151.6,109.7 L152.2,110.1 L152.8,110.8 L153.4,112.0 L154.0,113.5 L154.6,115.3 L155.2,117.4 L155.8,119.6 L156.4,121.9 L157.0,124.2 L157.6,126.5 L158.2,128.6 L158.8,130.5 L159.4,132.1 L160.0,133.4 L160.6,134.4 L161.2,134.9 L161.8,134.9 L162.4,134.6 L163.0,133.8 L163.6,132.7 L164.2,131.2 L164.8,129.4 L165.4,127.4 L166.0,125.2 L166.6,123.0 L167.2,120.7 L167.8,118.6 L168.4,116.5 L169.0,114.7 L169.6,113.2 L170.2,112.0 L170.8,111.1 L171.4,110.7 L172.0,110.6 L172.6,110.8 L173.2,111.5 L173.8,112.5 L174.4,113.7 L175.0,115.2 L175.6,116.9 L176.2,118.7 L176.8,120.5 L177.4,122.3 L178.0,124.0 L178.6,125.6 L179.2,127.0 L179.8,128.2 L180.4,129.1 L181.0,129.7 L181.6,130.0 L182.2,130.1 L182.8,129.9 L183.4,129.4 L184.0,128.7 L184.6,127.8 L185.2,126.7 L185.8,125.6 L186.4,124.5 L187.0,123.3 L187.6,122.2 L188.2,121.2 L188.8,120.3 L189.4,119.6 L190.0,119.0 L190.6,118.7 L191.2,118.4 L191.8,118.4 L192.4,118.5 L193.0,118.8 L193.6,119.1 L194.2,119.6 L194.8,120.0 L195.4,120.5 L196.0,121.0 L196.6,121.4 L197.2,121.7 L197.8,121.9 L198.4,122.0 L199.0,122.1 L199.6,122.0 L200.2,121.8 L200.8,121.5 L201.4,121.2 L202.0,120.8 L202.6,120.4 L203.2,120.1 L203.8,119.8 L204.4,119.6 L205.0,119.5 L205.6,119.5 L206.2,119.7 L206.8,120.1 L207.4,120.6 L208.0,121.2 L208.6,122.0 L209.2,122.9 L209.8,123.8 L210.4,124.8 L211.0,125.8 L211.6,126.7 L212.2,127.5 L212.8,128.2 L213.4,128.7 L214.0,129.0 L214.6,129.1 L215.2,128.9 L215.8,128.5 L216.4,127.7 L217.0,126.8 L217.6,125.6 L218.2,124.2 L218.8,122.6 L219.4,121.0 L220.0,119.3 L220.6,117.6 L221.2,116.0 L221.8,114.6 L222.4,113.3 L223.0,112.3 L223.6,111.6 L224.2,111.2 L224.8,111.2 L225.4,111.6 L226.0,112.3 L226.6,113.3 L227.2,114.7 L227.8,116.4 L228.4,118.3 L229.0,120.3 L229.6,122.5 L230.2,124.7 L230.8,126.8 L231.4,128.8 L232.0,130.6 L232.6,132.1 L233.2,133.4 L233.8,134.2 L234.4,134.7 L235.0,134.7 L235.6,134.4 L236.2,133.6 L236.8,132.4 L237.4,130.9 L238.0,129.0 L238.6,127.0 L239.2,124.7 L239.8,122.4 L240.4,120.1 L241.0,117.8 L241.6,115.7 L242.2,113.8 L242.8,112.1 L243.4,110.8 L244.0,109.9 L244.6,109.4 L245.2,109.3 L245.8,109.7 L246.4,110.4 L247.0,111.5 L247.6,112.9 L248.2,114.7 L248.8,116.6 L249.4,118.7 L250.0,120.8 L250.6,122.9 L251.2,125.0 L251.8,126.9 L252.4,128.6 L253.0,130.0 L253.6,131.2 L254.2,132.0 L254.8,132.4 L255.4,132.5 L256.0,132.2 L256.6,131.6 L257.2,130.8 L257.8,129.6 L258.4,128.3 L259.0,126.8 L259.6,125.2 L260.2,123.5 L260.8,121.9 L261.4,120.4 L262.0,119.0 L262.6,117.8 L263.2,116.8 L263.8,116.1 L264.4,115.6 L265.0,115.3 L265.6,115.3 L266.2,115.6 L266.8,116.0 L267.4,116.6 L268.0,117.4 L268.6,118.2 L269.2,119.1 L269.8,120.0 L270.4,120.9 L271.0,121.7 L271.6,122.5 L272.2,123.1 L272.8,123.5 L273.4,123.9 L274.0,124.0 L274.6,124.1 L275.2,124.0 L275.8,123.8 L276.4,123.5 L277.0,123.2 L277.6,122.9 L278.2,122.5 L278.8,122.2 L279.4,122.0 L280.0,121.9 L280.6,121.8 L281.2,121.9 L281.8,122.1 L282.4,122.3 L283.0,122.7 L283.6,123.2 L284.2,123.7 L284.8,124.2 L285.4,124.7 L286.0,125.2 L286.6,125.6 L287.2,125.9 L287.8,126.0 L288.4,126.0 L289.0,125.8 L289.6,125.4 L290.2,124.9 L290.8,124.1 L291.4,123.2 L292.0,122.1 L292.6,121.0 L293.2,119.8 L293.8,118.5 L294.4,117.4 L295.0,116.2 L295.6,115.3 L296.2,114.5 L296.8,113.9 L297.4,113.6 L298.0,113.5 L298.6,113.8 L299.2,114.3 L299.8,115.2 L300.4,116.3 L301.0,117.7 L301.6,119.3 L302.2,121.0 L302.8,122.9 L303.4,124.8 L304.0,126.6 L304.6,128.4 L305.2,130.0 L305.8,131.4 L306.4,132.4 L307.0,133.2 L307.6,133.6 L308.2,133.6 L308.8,133.3 L309.4,132.5 L310.0,131.4" class="il-eeg il-wt"/><text x="60" y="170" class="il-tag" text-anchor="end">דלתא</text><path d="M70.0,166.1 L70.6,166.0 L71.2,165.9 L71.8,165.8 L72.4,165.8 L73.0,165.7 L73.6,165.7 L74.2,165.8 L74.8,165.8 L75.4,165.9 L76.0,166.1 L76.6,166.2 L77.2,166.4 L77.8,166.5 L78.4,166.8 L79.0,167.0 L79.6,167.2 L80.2,167.5 L80.8,167.8 L81.4,168.0 L82.0,168.3 L82.6,168.7 L83.2,169.0 L83.8,169.3 L84.4,169.6 L85.0,169.9 L85.6,170.2 L86.2,170.5 L86.8,170.8 L87.4,171.1 L88.0,171.4 L88.6,171.7 L89.2,171.9 L89.8,172.2 L90.4,172.4 L91.0,172.6 L91.6,172.7 L92.2,172.9 L92.8,173.0 L93.4,173.1 L94.0,173.1 L94.6,173.1 L95.2,173.1 L95.8,173.1 L96.4,173.0 L97.0,172.9 L97.6,172.7 L98.2,172.5 L98.8,172.3 L99.4,172.0 L100.0,171.7 L100.6,171.4 L101.2,171.0 L101.8,170.6 L102.4,170.2 L103.0,169.7 L103.6,169.2 L104.2,168.7 L104.8,168.1 L105.4,167.5 L106.0,166.9 L106.6,166.3 L107.2,165.6 L107.8,164.9 L108.4,164.2 L109.0,163.5 L109.6,162.8 L110.2,162.1 L110.8,161.3 L111.4,160.6 L112.0,159.8 L112.6,159.1 L113.2,158.3 L113.8,157.6 L114.4,156.9 L115.0,156.2 L115.6,155.5 L116.2,154.8 L116.8,154.1 L117.4,153.5 L118.0,152.9 L118.6,152.3 L119.2,151.8 L119.8,151.3 L120.4,150.8 L121.0,150.4 L121.6,150.0 L122.2,149.6 L122.8,149.3 L123.4,149.0 L124.0,148.8 L124.6,148.7 L125.2,148.5 L125.8,148.5 L126.4,148.5 L127.0,148.5 L127.6,148.6 L128.2,148.7 L128.8,148.9 L129.4,149.2 L130.0,149.5 L130.6,149.8 L131.2,150.2 L131.8,150.6 L132.4,151.1 L133.0,151.7 L133.6,152.3 L134.2,152.9 L134.8,153.6 L135.4,154.3 L136.0,155.0 L136.6,155.8 L137.2,156.6 L137.8,157.5 L138.4,158.4 L139.0,159.3 L139.6,160.2 L140.2,161.1 L140.8,162.1 L141.4,163.0 L142.0,164.0 L142.6,165.0 L143.2,166.0 L143.8,167.0 L144.4,167.9 L145.0,168.9 L145.6,169.9 L146.2,170.8 L146.8,171.8 L147.4,172.7 L148.0,173.6 L148.6,174.4 L149.2,175.3 L149.8,176.1 L150.4,176.9 L151.0,177.6 L151.6,178.3 L152.2,179.0 L152.8,179.6 L153.4,180.2 L154.0,180.7 L154.6,181.2 L155.2,181.6 L155.8,182.0 L156.4,182.3 L157.0,182.6 L157.6,182.8 L158.2,183.0 L158.8,183.2 L159.4,183.2 L160.0,183.3 L160.6,183.2 L161.2,183.2 L161.8,183.0 L162.4,182.9 L163.0,182.6 L163.6,182.4 L164.2,182.1 L164.8,181.7 L165.4,181.3 L166.0,180.9 L166.6,180.4 L167.2,179.9 L167.8,179.4 L168.4,178.8 L169.0,178.2 L169.6,177.6 L170.2,176.9 L170.8,176.2 L171.4,175.6 L172.0,174.9 L172.6,174.2 L173.2,173.4 L173.8,172.7 L174.4,172.0 L175.0,171.3 L175.6,170.5 L176.2,169.8 L176.8,169.1 L177.4,168.4 L178.0,167.7 L178.6,167.1 L179.2,166.4 L179.8,165.8 L180.4,165.2 L181.0,164.6 L181.6,164.0 L182.2,163.5 L182.8,163.0 L183.4,162.5 L184.0,162.1 L184.6,161.6 L185.2,161.3 L185.8,160.9 L186.4,160.6 L187.0,160.4 L187.6,160.1 L188.2,159.9 L188.8,159.8 L189.4,159.6 L190.0,159.5 L190.6,159.5 L191.2,159.5 L191.8,159.5 L192.4,159.5 L193.0,159.6 L193.6,159.7 L194.2,159.8 L194.8,159.9 L195.4,160.1 L196.0,160.3 L196.6,160.5 L197.2,160.8 L197.8,161.0 L198.4,161.3 L199.0,161.6 L199.6,161.9 L200.2,162.1 L200.8,162.5 L201.4,162.8 L202.0,163.1 L202.6,163.4 L203.2,163.7 L203.8,164.0 L204.4,164.3 L205.0,164.5 L205.6,164.8 L206.2,165.0 L206.8,165.3 L207.4,165.5 L208.0,165.7 L208.6,165.9 L209.2,166.0 L209.8,166.2 L210.4,166.3 L211.0,166.4 L211.6,166.4 L212.2,166.4 L212.8,166.4 L213.4,166.4 L214.0,166.4 L214.6,166.3 L215.2,166.2 L215.8,166.0 L216.4,165.9 L217.0,165.7 L217.6,165.5 L218.2,165.2 L218.8,164.9 L219.4,164.7 L220.0,164.3 L220.6,164.0 L221.2,163.6 L221.8,163.3 L222.4,162.9 L223.0,162.5 L223.6,162.1 L224.2,161.7 L224.8,161.2 L225.4,160.8 L226.0,160.4 L226.6,159.9 L227.2,159.5 L227.8,159.1 L228.4,158.6 L229.0,158.2 L229.6,157.8 L230.2,157.4 L230.8,157.1 L231.4,156.7 L232.0,156.4 L232.6,156.1 L233.2,155.8 L233.8,155.5 L234.4,155.3 L235.0,155.1 L235.6,155.0 L236.2,154.8 L236.8,154.8 L237.4,154.7 L238.0,154.7 L238.6,154.7 L239.2,154.8 L239.8,154.9 L240.4,155.0 L241.0,155.2 L241.6,155.5 L242.2,155.8 L242.8,156.1 L243.4,156.4 L244.0,156.8 L244.6,157.3 L245.2,157.8 L245.8,158.3 L246.4,158.8 L247.0,159.4 L247.6,160.1 L248.2,160.7 L248.8,161.4 L249.4,162.2 L250.0,162.9 L250.6,163.7 L251.2,164.5 L251.8,165.3 L252.4,166.1 L253.0,167.0 L253.6,167.8 L254.2,168.7 L254.8,169.6 L255.4,170.5 L256.0,171.3 L256.6,172.2 L257.2,173.1 L257.8,173.9 L258.4,174.8 L259.0,175.6 L259.6,176.4 L260.2,177.2 L260.8,177.9 L261.4,178.7 L262.0,179.4 L262.6,180.1 L263.2,180.7 L263.8,181.3 L264.4,181.9 L265.0,182.4 L265.6,182.8 L266.2,183.3 L266.8,183.6 L267.4,184.0 L268.0,184.3 L268.6,184.5 L269.2,184.7 L269.8,184.8 L270.4,184.8 L271.0,184.9 L271.6,184.8 L272.2,184.7 L272.8,184.6 L273.4,184.4 L274.0,184.1 L274.6,183.8 L275.2,183.4 L275.8,183.0 L276.4,182.6 L277.0,182.1 L277.6,181.5 L278.2,180.9 L278.8,180.3 L279.4,179.6 L280.0,178.9 L280.6,178.1 L281.2,177.3 L281.8,176.5 L282.4,175.7 L283.0,174.8 L283.6,173.9 L284.2,173.0 L284.8,172.1 L285.4,171.2 L286.0,170.2 L286.6,169.3 L287.2,168.3 L287.8,167.4 L288.4,166.4 L289.0,165.5 L289.6,164.6 L290.2,163.6 L290.8,162.7 L291.4,161.9 L292.0,161.0 L292.6,160.2 L293.2,159.4 L293.8,158.6 L294.4,157.8 L295.0,157.1 L295.6,156.4 L296.2,155.8 L296.8,155.2 L297.4,154.6 L298.0,154.1 L298.6,153.7 L299.2,153.2 L299.8,152.9 L300.4,152.5 L301.0,152.2 L301.6,152.0 L302.2,151.8 L302.8,151.7 L303.4,151.6 L304.0,151.5 L304.6,151.5 L305.2,151.5 L305.8,151.6 L306.4,151.8 L307.0,151.9 L307.6,152.1 L308.2,152.4 L308.8,152.7 L309.4,153.0 L310.0,153.3" class="il-eeg il-wd"/>
+  <text x="190" y="186" class="il-small" text-anchor="middle">שנייה אחת בכל שורה</text>
+</svg>
+                </figure>
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>כשכל הקהל באצטדיון מדבר — שומעים רחש. כשכולם קוראים "או-לה!" יחד — שומעים גל אדיר. ככה זה גם במוח.</p></aside>
+              <p><a class="lab-link" href="./lab-brainwaves.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לנסות בעצמכם: גלי מוח</a></p><p><a class="lab-link" href="./case-brain-eyes.html"><svg aria-hidden="true"><use href="#i-flask"/></svg>לתיק "עיניים עצומות"</a></p>
+            </section>
+            <section id="safety" class="lesson lesson-warn">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-shield"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">10</span>
+                <h2>חשמל מבחוץ: מסוכן, ומציל חיים</h2>
+              </header>
+              <div>
+                <div class="prose">
+
+<p>הגוף עובד במתחים של עשיריות וולט ובזרמים זעירים. החשמל בשקע בבית — 230 וולט — יכול לדחוף דרך הגוף זרם שגורם לשרירים להתכווץ בלי שליטה (לפעמים עד כדי כך שאי אפשר לשחרר את האחיזה), ולבלבל את הקצב של הלב. לכן <strong>אסור לגעת בשקעים, בחוטים חשופים או במכשירי חשמל ליד מים</strong>. סוללה של 1.5 וולט, לעומת זאת, לא מסוגלת לדחוף זרם מורגש דרך העור.</p>
+<p>אותו עיקרון משמש גם להצלת חיים. כשהלב נכנס לבלגן חשמלי ו"רוטט" במקום לפעום, <strong>דפיברילטור</strong> נותן מכה חשמלית חזקה ומבוקרת, שמאפסת את כל תאי הלב בבת אחת, וכך הקוצב הטבעי יכול לחזור לפקד. במקומות ציבוריים רבים יש דפיברילטור אוטומטי, שמסביר בקול מה לעשות.</p>
+<p>ולמי שהקוצב הטבעי שלו איטי מדי, יש <strong>קוצב לב מלאכותי</strong>: מכשיר קטן עם סוללה, שמושתל מתחת לעור ושולח ללב פולסים קטנים בדיוק כשצריך.</p>
+                </div>
+                
+              </div>
+              <aside class="kids-box"><strong>בשפה פשוטה</strong><p>החשמל של הגוף עדין מאוד. חשמל מהקיר חזק פי אלפים — ולכן אף פעם לא נוגעים בשקע. רק רופאים ומכשירים מיוחדים משתמשים בחשמל חזק כדי לעזור ללב.</p></aside>
+              
+            </section>
+            <section id="glossary" class="lesson">
+              <header class="lesson-title">
+                <span class="lesson-ico" aria-hidden="true"><svg><use href="#i-book"/></svg></span>
+                <span class="lesson-num" aria-hidden="true">11</span>
+                <h2>מילון קטן</h2>
+              </header>
+              <dl class="glossary">
+<div><dt>יון</dt><dd>אטום עם מטען חשמלי. נתרן ואשלגן הם יונים חיוביים.</dd></div>
+<div><dt>ממברנה</dt><dd>הקרום הדק שעוטף כל תא.</dd></div>
+<div><dt>תעלה (שער)</dt><dd>חור זעיר בממברנה שנפתח ונסגר ומעביר סוג אחד של יון.</dd></div>
+<div><dt>נוירון</dt><dd>תא עצב.</dd></div>
+<div><dt>אקסון</dt><dd>ה"חוט" הארוך של תא העצב, שבו רץ האות.</dd></div>
+<div><dt>מיאלין</dt><dd>מעטפת שומנית סביב האקסון שמאיצה את האות.</dd></div>
+<div><dt>פוטנציאל פעולה</dt><dd>קוץ חשמלי קצר בתא עצב או שריר.</dd></div>
+<div><dt>סינפסה</dt><dd>נקודת המפגש בין שני תאי עצב, או בין עצב לשריר.</dd></div>
+<div><dt>מיליוולט (מ"ו)</dt><dd>אלפית וולט.</dd></div>
+<div><dt>אק"ג</dt><dd>מדידת החשמל של הלב.</dd></div>
+<div><dt>EEG</dt><dd>מדידת החשמל של המוח.</dd></div>
+<div><dt>EMG</dt><dd>מדידת החשמל של שרירים.</dd></div>
+              </dl>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+    <!-- @footer -->
+    <script type="module" src="./src/pages/physics.js"></script>
+  </body>
+</html>

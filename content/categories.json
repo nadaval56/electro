@@ -1,0 +1,27 @@
+[
+  {
+    "id": "heart",
+    "label": "הלב",
+    "emoji": "❤️"
+  },
+  {
+    "id": "brain",
+    "label": "המוח",
+    "emoji": "🧠"
+  },
+  {
+    "id": "muscle",
+    "label": "שרירים",
+    "emoji": "💪"
+  },
+  {
+    "id": "nerve",
+    "label": "עצבים",
+    "emoji": "⚡"
+  },
+  {
+    "id": "nature",
+    "label": "טבע",
+    "emoji": "🌿"
+  }
+]

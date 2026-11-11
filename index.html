@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <!-- @head -->
+    <title>{{SITE_NAME}} · {{SITE_TAGLINE}}</title>
+    <meta name="description" content="אתר לימודי בעברית על אלקטרופיזיולוגיה — החשמל שבגוף: הלב, המוח, העצבים והשרירים. תיקי חקירה, מעבדה עם סימולטורים ומשחקים, חיות חשמליות והיסטוריה. לילדים ולמבוגרים סקרנים." />
+  </head>
+  <body>
+    <!-- @header -->
+    <main id="main">
+      <div class="container">
+        <section class="hero">
+          <div>
+            <span class="eyebrow">אתר לימודי על החשמל שבגוף</span>
+            <h1>יש בכם חשמל. <span class="hero-accent">ממש עכשיו.</span></h1>
+            <p class="lead">
+              כל פעימת לב, כל מחשבה וכל תזוזה של אצבע מתחילות בניצוץ חשמלי זעיר.
+              כאן אפשר לראות אותם, לשחק איתם ולהבין איך הם עובדים — מהתא הבודד ועד הצלופח החשמלי.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="./cases.html">התחילו לחקור!</a>
+              <a class="btn" href="./lab-pacemaker.html">🎮 אתם הקוצב — משחק</a>
+            </div>
+          </div>
+          <figure class="hero-monitor" id="hero-monitor">
+            <div class="monitor-top">
+              <span class="monitor-heart" aria-hidden="true">❤</span>
+              <span class="monitor-bpm"><output id="hero-bpm">75</output> <small>פעימות בדקה</small></span>
+            </div>
+            <div id="hero-scope"></div>
+            <div class="monitor-modes" role="group" aria-label="מה הגוף עושה עכשיו?">
+              <button type="button" class="chip-btn" data-bpm="55">😴 ישנים</button>
+              <button type="button" class="chip-btn is-on" data-bpm="75">🙂 במנוחה</button>
+              <button type="button" class="chip-btn" data-bpm="110">🚶 הולכים מהר</button>
+              <button type="button" class="chip-btn" data-bpm="160">🏃 רצים</button>
+            </div>
+            <figcaption>הדמיה של אק"ג — החשמל של הלב. לחצו על מצב וראו איך הקצב משתנה.</figcaption>
+          </figure>
+        </section>
+      </div>
+
+      <section class="section" aria-labelledby="how-title">
+        <div class="container">
+          <h2 id="how-title">איך עובדים כאן</h2>
+          <ol class="steps">
+            <li>
+              <h3>קוראים סיפור</h3>
+              <p>ילד שרץ בהפסקה, מוח שנרדם, צמח שטורף. כל תיק מתחיל בסיפור קצר.</p>
+            </li>
+            <li>
+              <h3>חוקרים את האות</h3>
+              <p>מסתכלים על רצועה של חשמל אמיתי (בהדמיה), ומסמנים עליה את התשובה שלכם.</p>
+            </li>
+            <li>
+              <h3>מגלים למה</h3>
+              <p>רק אז רואים את הפתרון, ולומדים את הרעיון שמסביר אותו — במילים פשוטות.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="explore-title">
+        <div class="container">
+          <h2 id="explore-title">מה יש באתר</h2>
+          <div class="grid grid-home" id="home-cards"></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="kids-title">
+        <div class="container">
+          <h2 id="kids-title">פינת המשחקים</h2>
+          <p class="muted">משחקים קצרים שמלמדים בלי שתרגישו. מתאים מגיל 7 ומעלה (וגם להורים).</p>
+          <div class="grid game-grid">
+            <a class="game-card game-heart" href="./lab-pacemaker.html">
+              <span class="game-emoji" aria-hidden="true">🥁</span>
+              <strong>אתם הקוצב!</strong>
+              <span>הקישו בקצב ושמרו על הלב פועם. מה קורה כשמפסיקים?</span>
+            </a>
+            <a class="game-card game-spark" href="./lab-reaction.html">
+              <span class="game-emoji" aria-hidden="true">⚡</span>
+              <strong>כמה מהר אתם?</strong>
+              <span>מדדו את זמן התגובה, וגלו כמה רחוק רץ האות בזמן הזה.</span>
+            </a>
+            <a class="game-card game-brain" href="./lab-brainwaves.html">
+              <span class="game-emoji" aria-hidden="true">🧠</span>
+              <strong>גלי מוח</strong>
+              <span>החליפו בין שינה, חלום וריכוז, וראו את המוח משנה מנגינה.</span>
+            </a>
+            <a class="game-card game-race" href="./lab-race.html">
+              <span class="game-emoji" aria-hidden="true">🏁</span>
+              <strong>מרוץ האותות</strong>
+              <span>עצב עם מעיל מול עצב בלי מעיל. מי יגיע ראשון לבוהן?</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="facts-title">
+        <div class="container">
+          <h2 id="facts-title">הידעתם?</h2>
+          <div class="facts" id="facts"></div>
+        </div>
+      </section>
+    </main>
+    <!-- @footer -->
+    <script type="module" src="./src/pages/home.js"></script>
+  </body>
+</html>
