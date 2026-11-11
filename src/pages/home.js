@@ -2,6 +2,7 @@ import { h, prefersReducedMotion } from '../lib/dom.js';
 import { createLiveScope } from '../components/scope.js';
 import { createLiveEcg } from '../lib/live-ecg.js';
 import { ICONS } from '../config.js';
+import { MEDIA, mediaUrl } from '../data/media.js';
 
 // ---------- מוניטור הלב בראש העמוד ----------
 const bpmOut = document.getElementById('hero-bpm');
@@ -68,3 +69,13 @@ const FACTS = [
 ];
 document.getElementById('facts').append(...FACTS.map(([emoji, title, text]) =>
   h('article', { class: 'fact' }, h('span', { class: 'fact-emoji', 'aria-hidden': 'true', text: emoji }), h('h3', { text: title }), h('p', { text: text }))));
+
+// ---------- מהארכיון ----------
+const ARCHIVE = [
+  ['galvani-frog-1791', '1791 · הצפרדע של גלווני', 'history.html#tl-galvani'],
+  ['waller-jimmy', '1887 · ג\'ימי, הכלב עם האק"ג', 'history.html#tl-waller'],
+  ['einthoven-leads', '1903 · ידיים ורגל בדליים', 'history.html#tl-einthoven'],
+];
+document.getElementById('archive').append(...ARCHIVE.map(([id, title, href]) => h('a', { class: 'archive-card', href: `./${href}` },
+  h('img', { src: mediaUrl(MEDIA[id].file), alt: MEDIA[id].alt, loading: 'lazy', decoding: 'async' }),
+  h('span', {}, h('strong', { text: title }), MEDIA[id].caption))));

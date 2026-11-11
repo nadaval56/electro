@@ -1,0 +1,189 @@
+{
+  "galvani-frog-1791": {
+    "file": "galvani-frog-1791.webp",
+    "alt": "איור מתוך הספר של גלווני (1791): רגלי צפרדע מחוברות בקשת מתכת, ושריר הרגל מתכווץ.",
+    "caption": "רגלי צפרדע וקשת מתכת, מתוך הספר של גלווני, 1791.",
+    "source": {
+      "title": "De viribus electricitatis in motu musculari commentarius",
+      "url": "https://wellcomecollection.org/works/rnbddkf5",
+      "creator": "Wellcome Collection",
+      "license": "Public-Domain"
+    }
+  },
+  "galvanism-plate": {
+    "file": "galvanism-plate.webp",
+    "alt": "לוח תחריט ישן עם עשרות ציורים קטנים: רגלי צפרדע, צנצנות, וערימות של דסקיות מתכת — סוללות וולטה.",
+    "caption": "\"גלווניזם\": ניסויים וסוללות מתחילת המאה ה-19. הערימות הן סוללות וולטה.",
+    "source": {
+      "title": "Galvanism: 25 figures illustrating experiments and instruments",
+      "url": "https://wellcomecollection.org/works/damr98vm",
+      "creator": "Wellcome Collection",
+      "license": "Public-Domain"
+    }
+  },
+  "eels-horse-1849": {
+    "file": "eels-horse-1849.webp",
+    "alt": "תחריט ג'ונגל ונהר: סוסים נכנסים למים ומתפתלים, ובמים צלופחים חשמליים.",
+    "caption": "מתוך הספר של דו בואה-ריימון (1849): סוסים וצלופחים חשמליים, לפי סיפור המסע של אלכסנדר פון הומבולדט בוונצואלה.",
+    "source": {
+      "title": "Close-up engraved title page of a horse electrocuted by eels",
+      "url": "https://wellcomecollection.org/works/n6sagcfe",
+      "creator": "Wellcome Collection",
+      "license": "Public-Domain"
+    }
+  },
+  "helmholtz-pendulum": {
+    "file": "helmholtz-pendulum.webp",
+    "alt": "מכשיר עץ ומתכת גדול עם מטוטלת מעוקלת.",
+    "caption": "המטוטלת של הלמהולץ, שבעזרתה מדד כמה זמן לוקח לאות לעבור בעצב.",
+    "source": {
+      "title": "Von Helmholtz' pendulum",
+      "url": "https://wellcomecollection.org/works/s3w7vzpf",
+      "creator": "Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "waller-jimmy": {
+    "file": "waller-jimmy.webp",
+    "alt": "שלוש תמונות: וולר יושב במעבדה עם מכשירים, ובתמונה אחרת הבולדוג ג'ימי עומד עם רגליים בכלים של מי מלח.",
+    "caption": "אוגוסטוס וולר במעבדה, והבולדוג שלו ג'ימי \"מחובר\" לאק\"ג.",
+    "source": {
+      "title": "Augustus Desire Waller in his laboratory",
+      "url": "https://wellcomecollection.org/works/fa4zgxhc",
+      "creator": "Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "einthoven-leads": {
+    "file": "einthoven-leads.webp",
+    "alt": "איש יושב על כיסא, שתי ידיו ורגלו השמאלית בתוך דליים גדולים.",
+    "caption": "שלוש \"הליכות\" (leads) של אק\"ג בתחילת המאה ה-20: שתי הידיים ורגל שמאל בדליים של מי מלח, שמחוברים לגלוונומטר.",
+    "source": {
+      "title": "Electrocardiogram demonstration",
+      "url": "https://wellcomecollection.org/works/ug6zc7d3",
+      "creator": "Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "adrian-1955": {
+    "file": "adrian-1955.webp",
+    "alt": "צילום שחור-לבן של אדגר אדריאן, איש מבוגר בחליפה.",
+    "caption": "אדגר אדריאן, 1955.",
+    "source": {
+      "title": "E.D. Adrian, UCL 1955/56",
+      "url": "https://wellcomecollection.org/works/ha63h9qu",
+      "creator": "Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "pacemaker-early": {
+    "file": "pacemaker-early.webp",
+    "alt": "קופסה שקופה מלאה בחלקים אלקטרוניים, עם שני חוטים יוצאים.",
+    "caption": "אחד מקוצבי הלב המושתלים המוקדמים, יצוק בשרף שקוף.",
+    "source": {
+      "title": "Pacemaker, original",
+      "url": "https://wellcomecollection.org/works/jm8bpqqz",
+      "creator": "Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "torpedo-anatomy": {
+    "file": "torpedo-anatomy.webp",
+    "alt": "תחריט ישן של דג שטוח ועגול מלמעלה ומלמטה, עם חתכים של האיברים החשמליים שנראים כמו חלות דבש.",
+    "caption": "דג החשמלן (טורפדו) ואיבריו החשמליים, תחריט מהמאה ה-18.",
+    "source": {
+      "title": "Various cross-sections of a cramp-fish and its parts",
+      "url": "https://wellcomecollection.org/works/fxbgg76w",
+      "creator": "Wellcome Collection",
+      "license": "Public-Domain"
+    }
+  },
+  "nerve-cell-art": {
+    "file": "nerve-cell-art.webp",
+    "alt": "איור צבעוני: תא עצב סגול עם שלוחות מסועפות, ואקסון ארוך עטוף בטבעות כתומות של מיאלין.",
+    "caption": "תא עצב: גוף התא, השלוחות שקולטות אותות, והאקסון העטוף במיאלין (איור).",
+    "source": {
+      "title": "Nerve Cell",
+      "url": "https://wellcomecollection.org/works/ss2667f2",
+      "creator": "Bill McConkey, Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "myelin-tem": {
+    "file": "myelin-tem.webp",
+    "alt": "צילום מיקרוסקופ אלקטרונים בשחור-לבן: עיגולים עם טבעות כהות ועבות סביבם.",
+    "caption": "מיאלין אמיתי: חתך של עצבים במוח של עכבר, בהגדלה עצומה. הטבעות הכהות הן שכבות המיאלין.",
+    "source": {
+      "title": "Myelinated nerves in a mouse brain, TEM",
+      "url": "https://wellcomecollection.org/works/kx427bd8",
+      "creator": "Mikaela Laine, University of Helsinki / Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "motor-end-plate": {
+    "file": "motor-end-plate.webp",
+    "alt": "צילום מיקרוסקופ: סיבי שריר עם פסים, ועליהם קצות עצב כהים שמסתעפים.",
+    "caption": "המפגש בין עצב לשריר (לוחית הקצה): כאן העצב \"אומר\" לשריר להתכווץ.",
+    "source": {
+      "title": "Motor end plate",
+      "url": "https://wellcomecollection.org/works/edz3zstc",
+      "creator": "Mike Kayser, Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "heart-muscle-cells": {
+    "file": "heart-muscle-cells.webp",
+    "alt": "צילום מיקרוסקופ אלקטרונים בשחור-לבן של תאי שריר עם פסים דקים.",
+    "caption": "תאי שריר הלב במיקרוסקופ אלקטרונים.",
+    "source": {
+      "title": "Heart muscle cells",
+      "url": "https://wellcomecollection.org/works/q37qxsy8",
+      "creator": "Dr Andrew Loesch, Wellcome Collection",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "waller-chest-map": {
+    "file": "waller-chest-map.webp",
+    "alt": "ציור של גוף אדם עם קווים מעוקלים שיוצאים משתי נקודות על החזה, כמו קווים של מגנט.",
+    "caption": "המפה של וולר (1887): כך מתפזר החשמל של הלב על פני החזה.",
+    "source": {
+      "title": "A.D. Waller, \"Properties of human heart\"",
+      "url": "https://wellcomecollection.org/works/vesxgyed",
+      "creator": "Wellcome Collection",
+      "license": "Public-Domain"
+    }
+  },
+  "nerve-cells-drawing": {
+    "file": "nerve-cells-drawing.webp",
+    "alt": "דף עם ציורים בעיפרון של תאי עצב בצורות שונות, עם שלוחות דקות.",
+    "caption": "ציורים של תאי עצב מהמאה ה-19, כפי שנראו במיקרוסקופ.",
+    "source": {
+      "title": "Nerve cells",
+      "url": "https://wellcomecollection.org/works/cwqw7tvh",
+      "creator": "Wellcome Collection",
+      "license": "Public-Domain"
+    }
+  },
+  "platypus": {
+    "file": "platypus.webp",
+    "alt": "ציור צבעוני של ברווזן חום עם מקור שטוח, על גדת נחל.",
+    "caption": "ברווזן. ליתוגרפיה בצבע לפי וילהלם קונרט.",
+    "source": {
+      "title": "A duck billed platypus (watermole)",
+      "url": "https://wellcomecollection.org/works/kw97a59p",
+      "creator": "Wellcome Collection",
+      "license": "Public-Domain"
+    }
+  },
+  "port-jackson-shark": {
+    "file": "port-jackson-shark.webp",
+    "alt": "תחריט של כריש עם ראש גדול ועגול.",
+    "caption": "כריש פורט ג'קסון, תחריט מהמאה ה-18.",
+    "source": {
+      "title": "A Port Jackson shark and a detail of its gill",
+      "url": "https://wellcomecollection.org/works/gaycthxg",
+      "creator": "Wellcome Collection",
+      "license": "Public-Domain"
+    }
+  }
+}

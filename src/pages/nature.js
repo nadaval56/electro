@@ -1,6 +1,7 @@
 import { h } from '../lib/dom.js';
 import data from '../../content/nature.json';
 import { createQuiz } from '../components/quiz.js';
+import { mediaFigure } from '../data/media.js';
 
 const caseLink = (href) => (import.meta.env.DEV ? `./case.html?id=${href.replace(/^case-|\.html$/g, '')}` : `./${href}`);
 const wow = (t) => h('p', { class: 'nature-wow' }, h('strong', { text: 'וואו! ' }), t);
@@ -13,6 +14,7 @@ const voltBar = (v) => h('div', { class: 'volt' },
   h('div', { class: 'volt-scale', 'aria-hidden': 'true' }, ['0.1', '1', '10', '100', '1000'].map((x) => h('span', { text: x }))));
 
 document.getElementById('makers').append(...data.makers.map((a) => h('article', { class: 'nature-card', id: a.id },
+  a.media && mediaFigure(a.media, 'nature-figure'),
   h('div', { class: 'nature-head' }, h('span', { class: 'nature-emoji', 'aria-hidden': 'true', text: a.emoji }),
     h('div', {}, h('h3', { text: a.name }), h('p', { class: 'muted small', text: `📍 ${a.where}` }))),
   h('p', { class: 'nature-power' }, '🔋 ', a.power),
@@ -20,6 +22,7 @@ document.getElementById('makers').append(...data.makers.map((a) => h('article', 
   h('p', { text: a.text }), wow(a.wow))));
 
 document.getElementById('sensers').append(...data.sensers.map((a) => h('article', { class: 'nature-card', id: a.id },
+  a.media && mediaFigure(a.media, 'nature-figure'),
   h('div', { class: 'nature-head' }, h('span', { class: 'nature-emoji', 'aria-hidden': 'true', text: a.emoji }),
     h('div', {}, h('h3', { text: a.name }), h('p', { class: 'muted small', text: `📡 ${a.sense}` }))),
   h('p', { text: a.text }), wow(a.wow))));

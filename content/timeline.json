@@ -9,7 +9,8 @@
       "source": {
         "label": "ויקיפדיה: Scribonius Largus",
         "url": "https://en.wikipedia.org/wiki/Scribonius_Largus"
-      }
+      },
+      "media": "torpedo-anatomy"
     },
     {
       "id": "galvani",
@@ -20,7 +21,8 @@
       "source": {
         "label": "ויקיפדיה: Luigi Galvani",
         "url": "https://en.wikipedia.org/wiki/Luigi_Galvani"
-      }
+      },
+      "media": "galvani-frog-1791"
     },
     {
       "id": "volta",
@@ -31,18 +33,20 @@
       "source": {
         "label": "ויקיפדיה: Voltaic pile",
         "url": "https://en.wikipedia.org/wiki/Voltaic_pile"
-      }
+      },
+      "media": "galvanism-plate"
     },
     {
       "id": "dubois",
       "year": "1843",
       "date": "1843–1849",
       "title": "מגלים את הקוץ",
-      "text": "הפיזיולוג הגרמני אמיל דו בואה-ריימון בנה מכשירים רגישים מאוד, וגילה שכשעצב פעיל עוברת בו \"תנודה שלילית\" — מה שאנחנו קוראים לו היום פוטנציאל פעולה.",
+      "text": "הפיזיולוג הגרמני אמיל דו בואה-ריימון בנה מכשירים רגישים מאוד, וגילה שכשעצב פעיל עוברת בו \"תנודה שלילית\" — מה שאנחנו קוראים לו היום פוטנציאל פעולה. בעמוד השער של ספרו הוא צייר את הסיפור של אלכסנדר פון הומבולדט, שראה בוונצואלה צלופחים חשמליים נלחמים בסוסים.",
       "source": {
         "label": "ויקיפדיה: Emil du Bois-Reymond",
         "url": "https://en.wikipedia.org/wiki/Emil_du_Bois-Reymond"
-      }
+      },
+      "media": "eels-horse-1849"
     },
     {
       "id": "helmholtz",
@@ -53,7 +57,8 @@
       "source": {
         "label": "ויקיפדיה: Hermann von Helmholtz",
         "url": "https://en.wikipedia.org/wiki/Hermann_von_Helmholtz"
-      }
+      },
+      "media": "helmholtz-pendulum"
     },
     {
       "id": "waller",
@@ -64,7 +69,8 @@
       "source": {
         "label": "ויקיפדיה: Augustus Desiré Waller",
         "url": "https://en.wikipedia.org/wiki/Augustus_D%C3%A9sir%C3%A9_Waller"
-      }
+      },
+      "media": "waller-jimmy"
     },
     {
       "id": "einthoven",
@@ -75,7 +81,8 @@
       "source": {
         "label": "פרס נובל ברפואה 1924",
         "url": "https://www.nobelprize.org/prizes/medicine/1924/summary/"
-      }
+      },
+      "media": "einthoven-leads"
     },
     {
       "id": "berger",
@@ -101,7 +108,8 @@
       "source": {
         "label": "פרס נובל ברפואה 1932",
         "url": "https://www.nobelprize.org/prizes/medicine/1932/summary/"
-      }
+      },
+      "media": "adrian-1955"
     },
     {
       "id": "squid",
@@ -149,7 +157,8 @@
       "source": {
         "label": "ויקיפדיה: Arne Larsson",
         "url": "https://en.wikipedia.org/wiki/Arne_Larsson"
-      }
+      },
+      "media": "pacemaker-early"
     },
     {
       "id": "patch",

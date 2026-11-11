@@ -1,8 +1,8 @@
 // ציר זמן: סרגל שנים דביק לקפיצה מהירה, ורשימת אירועים. כל אירוע עם מקור.
 // מסמן בסרגל את האירוע שנמצא כרגע בתצוגה (IntersectionObserver).
 import { h } from '../lib/dom.js';
+import { mediaFigure } from '../data/media.js';
 
-const imgUrl = (file) => `${import.meta.env.BASE_URL}images/${file}`;
 
 /** @param {{events: Array<{id,year,date,title,text,source:{label,url},link?:{label,href}}>}} opts */
 export function createTimeline({ events }) {
@@ -14,14 +14,7 @@ export function createTimeline({ events }) {
   const list = h('ol', { class: 'tl-list' }, events.map((e) => h('li', { class: 'tl-item', id: `tl-${e.id}` },
     h('div', { class: 'tl-marker', 'aria-hidden': 'true' }, h('span', { text: e.year })),
     h('article', { class: 'tl-card' },
-      e.image && h('figure', { class: 'tl-figure' },
-        h('img', { src: imgUrl(e.image.file), alt: e.image.alt, loading: 'lazy', decoding: 'async' }),
-        h('figcaption', {}, e.image.caption, ' ',
-          // הדפסה מנגטיב: העצמות כהות — מפנה להסבר, כדי שלא ייראה כסתירה ל"עצם לבנה"
-          e.image.oldPrint && h('span', {}, 'זו הדפסה על נייר מהנגטיב, ולכן העצמות כהות (',
-            h('a', { href: './physics.html#old-prints', text: 'למה?' }), '). '),
-          h('a', { href: e.image.source.url, rel: 'noopener', target: '_blank', text: 'מקור התמונה' })),
-      ),
+      e.media && mediaFigure(e.media, 'tl-figure'),
       h('p', { class: 'tl-date', text: e.date }),
       h('h2', { class: 'tl-title', text: e.title }),
       h('p', { class: 'tl-text', text: e.text }),

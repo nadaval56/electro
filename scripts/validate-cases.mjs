@@ -41,8 +41,22 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
   for (const l of [c.why?.link, c.lab].filter(Boolean)) if (!linkOk(l.href)) err(`קישור לעמוד שלא קיים: ${l.href}`);
 }
 
+// תמונות: רישיון מותר בלבד, קובץ קיים, טקסט חלופי
+const LICENSES = ['Public-Domain', 'CC0-1.0', 'CC-BY-4.0', 'CC-BY-3.0', 'CC-BY-2.0'];
+const media = JSON.parse(readFileSync(resolve(root, 'content/media.json'), 'utf8'));
+for (const [id, m] of Object.entries(media)) {
+  if (!LICENSES.includes(m.source?.license)) errors.push(`media ${id}: רישיון לא מותר (${m.source?.license})`);
+  if (!m.alt || !m.caption || !m.source?.url || !m.source?.creator) errors.push(`media ${id}: חסר alt/caption/קרדיט`);
+  if (!existsSync(resolve(root, 'public/images', m.file))) errors.push(`media ${id}: הקובץ ${m.file} חסר`);
+}
+const usedMedia = [
+  ...JSON.parse(readFileSync(resolve(root, 'content/timeline.json'), 'utf8')).events.map((e) => e.media),
+  ...Object.values(JSON.parse(readFileSync(resolve(root, 'content/nature.json'), 'utf8'))).flat().map((a) => a.media),
+].filter(Boolean);
+for (const id of usedMedia) if (!media[id]) errors.push(`תמונה לא מוכרת: ${id}`);
+
 if (errors.length) {
   console.error(`✗ ${errors.length} בעיות בתיקים:\n  ${errors.join('\n  ')}`);
   process.exit(1);
 }
-console.log('✓ כל התיקים תקינים');
+console.log('✓ כל התיקים והתמונות תקינים');

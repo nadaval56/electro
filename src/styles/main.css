@@ -1619,3 +1619,22 @@ html.a11y-still .sister-clone { display: none; }
 .volt-mark { position: absolute; top: -4px; width: 2px; height: 18px; background: #fff; opacity: 0.6; }
 .volt-scale { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); margin-top: 2px; }
 .nature-quiz { display: grid; gap: 1.25rem; max-width: 720px; }
+
+/* ---------- תמונות ---------- */
+.media-figure figcaption, .nature-figure figcaption { margin-top: 0.5rem; font-size: 0.8125rem; line-height: 1.5; color: var(--text-muted); }
+.media-figure img { border-radius: var(--radius); border: 1px solid var(--border); background: #000; }
+.credit { white-space: nowrap; }
+.credit a { color: var(--text-muted); }
+.lesson-photo { max-width: 460px; margin: 1.25rem 0 0; }
+.nature-figure { margin: -1.2rem -1.2rem 1rem; }
+.nature-figure img { display: block; width: 100%; height: 210px; object-fit: cover; border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: 1px solid var(--border); background: #000; }
+.nature-figure figcaption { padding: 0 1.2rem; }
+.archive-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+.archive-card { display: grid; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--surface); color: var(--text-2); text-decoration: none; transition: border-color 0.2s, transform 0.2s var(--ease); }
+.archive-card:hover { border-color: var(--accent); transform: translateY(-3px); color: var(--text-2); }
+.archive-card img { width: 100%; height: 200px; object-fit: cover; background: #000; }
+.archive-card span { padding: 0.75rem 1rem; font-size: 0.95rem; }
+.archive-card strong { display: block; color: var(--text); }
+.image-credits { list-style: none; padding: 0; display: grid; gap: 0.5rem; }
+.image-credits li { display: grid; grid-template-columns: 64px 1fr; gap: 0.75rem; align-items: center; font-size: 0.875rem; color: var(--text-2); }
+.image-credits img { width: 64px; height: 64px; object-fit: cover; border-radius: var(--radius-sm); border: 1px solid var(--border); }
